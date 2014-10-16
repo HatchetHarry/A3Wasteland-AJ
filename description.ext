@@ -26,7 +26,7 @@ onLoadName = "AJ A3Wasteland Altis";
 onLoadMission = "www.armajunkies.de | ts3.armajunkies.de";
 overviewText = "www.armajunkies.de | ts3.armajunkies.de";
 overviewTextLocked = "www.armajunkies.de | ts3.armajunkies.de";
-overviewPicture = "Loading1.jpg";
+overviewPicture = "Loading.jpg";
 
 //Dialog includes
 
