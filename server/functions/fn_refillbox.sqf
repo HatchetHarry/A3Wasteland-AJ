@@ -23,6 +23,171 @@ if (_boxType == "mission_USSpecial2") then { _boxType = "mission_USSpecial" };
 
 switch (_boxType) do
 {
+
+	case "mission_aj_custom0":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "arifle_MX_F", 2, 4],
+			["wep", "arifle_MXC_F", 2],
+			["wep", "arifle_MX_GL_F", 2],
+			["wep", "arifle_MXM_F", 2],
+			["wep", "LMG_Mk200_F", 1, 2],
+			["wep", "arifle_MX_SW_F", 1, 3],
+			["wep", "hgun_Pistol_heavy_01_F", 2, 4],
+			["mag", "1Rnd_HE_Grenade_shell", RANDOM_BETWEEN(0,6)],
+			["mag", "SmokeShellYellow", RANDOM_BETWEEN(0,6)],
+			["mag", "HandGrenade", RANDOM_BETWEEN(0,6)],
+			["itm", "Medikit", RANDOM_BETWEEN(1,2)]
+		];
+    };
+	case "mission_aj_custom1":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "launch_NLAW_F", 2, 2],
+			["wep", "launch_RPG32_F", 2, 1],
+			["wep", "launch_Titan_F", 1, 2],
+			["wep", "launch_Titan_short_F", 1, 1],
+			["mag", "Titan_AP", 2],
+			["mag", "RPG32_HE_F", 2],
+			["mag", "SmokeShellYellow", RANDOM_BETWEEN(0,6)],
+			["mag", "HandGrenade", RANDOM_BETWEEN(0,6)]
+		];
+    };
+	case "mission_aj_custom2":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "arifle_Katiba_F", 2, 4],
+			["wep", "arifle_Katiba_C_F", 2],
+			["wep", "arifle_Katiba_GL_F", 2],
+			["wep", "LMG_Zafir_F", 1, 3],
+			["wep", "srifle_DMR_01_F", 2, 3],
+			["wep", "hgun_Pistol_heavy_02_F", 2, 2],
+			["mag", "1Rnd_HE_Grenade_shell", RANDOM_BETWEEN(0,6)],
+			["mag", "SmokeShellYellow", RANDOM_BETWEEN(0,6)],
+			["mag", "HandGrenade", RANDOM_BETWEEN(0,6)],
+			["itm", "optic_Aco", RANDOM_BETWEEN(0,3)],
+			["itm", "Medikit", RANDOM_BETWEEN(0,2)]
+		];
+    };
+	case "mission_aj_custom3":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["itm", "optic_Arco", RANDOM_BETWEEN(0,1)],
+			["itm", "optic_Hamr", RANDOM_BETWEEN(0,1)],
+			["itm", "optic_ACO_grn", RANDOM_BETWEEN(0,2)],
+			["itm", "optic_Holosight", RANDOM_BETWEEN(0,2)],
+			["itm", "optic_SOS", RANDOM_BETWEEN(0,1)],
+			["itm", "itemGPS", RANDOM_BETWEEN(0,3)],
+			["itm", "FirstAidKit", RANDOM_BETWEEN(0,6)],
+			["wep", "Laserdesignator", RANDOM_BETWEEN(0,3)],
+			["itm", "muzzle_snds_B", RANDOM_BETWEEN(0,2)],
+			["itm", "muzzle_snds_H_MG", RANDOM_BETWEEN(0,2)],
+			["mag", "SmokeShell", RANDOM_BETWEEN(0,2)],
+			["mag", "SmokeShellRed", RANDOM_BETWEEN(0,2)],
+			["mag", "SmokeShellGreen", RANDOM_BETWEEN(0,2)],
+			["mag", "SmokeShellPurple", RANDOM_BETWEEN(0,2)],
+			["mag", "SmokeShellBlue", RANDOM_BETWEEN(0,2)],
+			["mag", "SmokeShellOrange", RANDOM_BETWEEN(0,2)],
+			["mag", "HandGrenade", RANDOM_BETWEEN(0,10)],
+			["itm", "Medikit", RANDOM_BETWEEN(0,3)]
+		];
+    };
+	case "mission_aj_custom4":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "launch_NLAW_F", 2, 2],
+			["wep", "launch_RPG32_F", 2, 1],
+			["wep", "launch_Titan_F", 1, 2],
+			["wep", "launch_Titan_short_F", 2, 1],
+			["mag", "Titan_AP", 2],
+			["mag", "RPG32_HE_F", 2]
+		];
+    };
+	case "mission_aj_custom5":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "arifle_MX_Black_F", 3, 3],
+			["wep", "arifle_MXC_Black_F", 3],
+			["wep", "arifle_MX_GL_Black_F", 3],
+			["wep", "arifle_MXM_Black_F", 2],
+			["wep", "arifle_MX_SW_Black_F", 2, 3],
+			["wep", "srifle_EBR_F", 2, 3],
+			["itm", "optic_Aco", RANDOM_BETWEEN(0,3)],
+			["itm", "MiniGrenade", RANDOM_BETWEEN(0,6)],
+			["itm", "FirstAidKit", RANDOM_BETWEEN(0,6)],
+			["itm", "Medikit", RANDOM_BETWEEN(0,3)]
+		];
+    };
+	case "mission_aj_custom6":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "srifle_GM6_F", 1, RANDOM_BETWEEN(0,3)],
+			["wep", "arifle_Katiba_F", 3, 3],
+			["wep", "hgun_Pistol_heavy_02_F", 3, 2],
+			["wep", "Rangefinder", 2],
+			["itm", "optic_SOS", RANDOM_BETWEEN(0,1)],
+			["itm", "optic_ACO_grn", RANDOM_BETWEEN(0,3)],
+			["mag", "SmokeShellYellow", RANDOM_BETWEEN(0,6)],
+			["itm", "FirstAidKit", RANDOM_BETWEEN(0,6)],
+			["itm", "Medikit", RANDOM_BETWEEN(0,2)]
+		];
+    };
+	case "mission_aj_custom7":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["wep", "srifle_LRR_F", 1, RANDOM_BETWEEN(0,3)],
+			["wep", "arifle_MXC_Black_F", 3, 3],
+			["wep", "hgun_Pistol_heavy_01_F", 3, 6],
+			["wep", "Rangefinder", 2],
+			["itm", "optic_SOS", RANDOM_BETWEEN(0,1)],
+			["itm", "optic_ACO_grn", RANDOM_BETWEEN(0,3)],
+			["mag", "SmokeShellYellow", RANDOM_BETWEEN(0,6)],
+			["itm", "FirstAidKit", RANDOM_BETWEEN(0,6)],
+			["itm", "Medikit", RANDOM_BETWEEN(0,2)]
+		];
+    };
+	case "mission_aj_custom8":
+	{
+    	_boxItems =
+		[
+			//Author: Master / Staynex
+			// Item type, Item class, # of items, # of magazines per weapon
+			["mag", "APERSTripMine_Wire_Mag", 6],
+			["mag", "ATMine_Range_Mag", 2],
+			["mag", "APERSMine_Range_Mag", 3],
+			["mag", "APERSBoundingMine_Range_Mag", 3],
+			["mag", "SLAMDirectionalMine_Wire_Mag", 3],
+			["mag", "Claymore Charge", 3],
+			["mag", "DemoCharge_Remote_Mag", 3],
+			["mag", "SatchelCharge_Remote_Mag", 2],
+			["itm", "MineDetector", RANDOM_BETWEEN(0,3)],
+			["mag", "HandGrenade", RANDOM_BETWEEN(0,10)]
+		];
+    };
     case "mission_USLaunchers":
 	{
     	_boxItems =
@@ -58,7 +223,7 @@ switch (_boxType) do
     	_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["wep", ["srifle_LRR_SOS_F", "srifle_LRR_camo_SOS_F", "srifle_GM6_SOS_F", "srifle_GM6_camo_SOS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
+			//["wep", ["srifle_LRR_SOS_F", "srifle_LRR_camo_SOS_F", "srifle_GM6_SOS_F", "srifle_GM6_camo_SOS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
 			["itm", "optic_DMS", RANDOM_BETWEEN(1,2)]
@@ -67,3 +232,6 @@ switch (_boxType) do
 };
 
 [_box, _boxItems] call processItems;
+
+  
+  

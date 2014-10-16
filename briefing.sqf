@@ -29,17 +29,8 @@ player createDiaryRecord ["infos-en",
 [
 "SERVER PERFORMANCE",
 "
-We are running the Server with the latest CHIMERA Server build (PERF) . We are using a RAM-Disk for the ARMA Files and a dedicated High-End-Server with 64GB RAM for optimal Performance.  Therefore we hope we can provide the best performance possible to our players.<br /><br />
+We are running the  8-Core Server using a RAM-Disk for the ARMA Files and a dedicated High-End-Server with 64GB RAM for optimal Performance. All persistance is done via a MySQl Database.  Therefore we hope we can provide the best performance possible to our players.<br /><br />
  In the unlikely event ;-) that you still get bad server performance please let us know.
-"
-]];
-
-player createDiaryRecord ["infos-en",
-[
-"ZEUS ENABLED",
-"
-We enabled the Zeus Feature on this server to allow selected Players to act as a Game-Master and create more diversity for our Players . If a Zeus is online you can Ping him by pressing the Zeus Key (default: Z). Zeus is controlling the OPFOR-Faction on this server if he creates custom missions.<br /><br />
-Our Zeus Players can only use Zeus if they log in using dedicated Slots which are not saved and therefore gain no advantage if they play on non-Zeus slots.
 "
 ]];
 
@@ -47,7 +38,8 @@ player createDiaryRecord ["infos-en",
 [
 "NO ADMIN/DONATOR PERKS",
 "
-On this server there are no features which help admins or donators at the gameplay. There is also currently no need for you to donate anything. Just play and have fun.<br /><br />Wait - there is one thing you could do - if you like our server tell your friends about the 'Armajunkies'-Server so we can get the player slots filled for maximum pvp action :)
+On this server there are no features which help admins or donators at the gameplay and we are proud of it. There is also currently no need for you to donate anything. Just play and have fun.<br /><br />Wait - there is one thing you could do - if you like our server tell your friends about the 'Armajunkies'-Server so we can get the player slots filled for maximum pvp action :).<br /><br />
+You might notice that some players use a custom uniform skin. This is a feature we offer for clan's regulary playing on our servers. If your an active clan playing on our servers (5 players+) and also want a custom uniform contact us.
 "
 ]];
 
@@ -55,7 +47,7 @@ player createDiaryRecord ["infos-en",
 [
 "ALLOWED CLIENT MODS",
 "
-Advanced arma players will be glad to know that this server is supporting several client-side mods:<br /><br />Blastcore: A visual effects package for the A3 Platform. Better explosions and light effects.<br /><br />JSRS: Sound modification. Better distance feeling and nice alternative sound effects.<br /><br />Speed of Soundv2: Another Sound modification. Better distance feeling and nice alternative sound effects. Only use one of these.<br /><br />FSF Sac Ventral: Allows to put the backpack in a ventral position to realize a parachute jump. You can find parachutes in the inventory of helicopters on this server.<br /><br />MagRepack: Lets you consolidate your non-full magazines (Shortcut for Menu: CTRL+R).<br /><br />VTS_WeaponResting: Allows you to rest your weapon on objects and improve your shooting stability (Shortcut for resting CTRL+Space).
+Advanced arma players will be glad to know that this server is supporting several client-side mods:<br /><br />Blastcore: A visual effects package for the A3 Platform. Better explosions and light effects.<br /><br />JSRS: Sound modification. Better distance feeling and nice alternative sound effects.<br /><br />Speed of Soundv2: Another Sound modification. Better distance feeling and nice alternative sound effects. Only use one of these.<br /><br />ShackTac Fireteam HUD: Give you an always-visible way of seeing who your team members are.<br /><br />VTS_WeaponResting: Allows you to rest your weapon on objects and improve your shooting stability (Shortcut for resting CTRL+Space).
 "
 ]];
 
@@ -71,7 +63,7 @@ player createDiaryRecord ["infos-en",
 [
 "SAVE-SYSTEM/BASEBUILDING",
 "
-When you log out your player is safed with all his inventory and his money.<br /> <br />Base building parts which are bought in General Store are saved for 15 days if they are locked.<br /><br />Vehicles are currently not saved for optimal performance and replay value ;-)
+When you log out your player is safed with all his inventory and his money.<br /> <br />Base building parts which are bought in General Store are saved for 14 days if they are locked.<br /><br />Vehicles are currently not saved for optimal performance and replay value ;-)
 "
 ]];
 player createDiaryRecord ["infos-en",
@@ -94,7 +86,7 @@ player createDiaryRecord ["infos-en",
 [
 "REARM/RESUPPLY",
 "
-You can use the 'AJ Resupply Truck' to Rearm/Repair/Refuel your vehicles. This truck can be bought at the vehicle store or found at the 'supply truck' mission. Alternatively there are Resupply-Points on the Map which cost money.
+You can use the 'AJ Resupply Truck' to Rearm/Repair/Refuel your vehicles. This truck can be bought at the vehicle store or found at the 'supply truck' mission and allows fast and mobile resupplies. Alternatively there are Resupply-Points on the Map. Both options cost money.
 "
 ]];
 
@@ -110,7 +102,7 @@ player createDiaryRecord ["infos-en",
 [
 "LOOT SPAWNS",
 "
-In spawn towns (blue circles on map) you can find vehicles containing loot.
+In spawn towns (blue circles on map) you can find vehicles containing loot. We don't spawn loot in buildings for performance reasons.
 "
 ]];
 
