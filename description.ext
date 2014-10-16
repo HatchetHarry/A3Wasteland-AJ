@@ -21,12 +21,12 @@ class Header
 	minPlayers=1;
 	maxPlayers=145; // 144 players, 1 headless client
 };
-author="TOPARMA.COM - Core by A3Wasteland.com";
-onLoadName = "TOP A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
-onLoadMission = "Website: toparma.com Teamspeak: ts.toparma.com";
-overviewText = "Website: toparma.com Teamspeak: ts.toparma.com";
-overviewTextLocked = "Website: toparma.com Teamspeak: ts.toparma.com";
-overviewPicture = "Loading.jpg";
+author="Armajunkies based on A3Wasteland";
+onLoadName = "AJ A3Wasteland Altis";
+onLoadMission = "www.armajunkies.de | ts3.armajunkies.de";
+overviewText = "www.armajunkies.de | ts3.armajunkies.de";
+overviewTextLocked = "www.armajunkies.de | ts3.armajunkies.de";
+overviewPicture = "Loading1.jpg";
 
 //Dialog includes
 
@@ -63,6 +63,7 @@ class RscTitles
 	#include "addons\proving_ground\PG_rsctitles.hpp"
  	#include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
+	#include "addons\loadingscreen\loadingscreen.hpp"
 };
 
 class CfgFunctions

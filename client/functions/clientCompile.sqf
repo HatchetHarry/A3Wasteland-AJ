@@ -60,6 +60,11 @@ spawnRandom = "client\functions\spawnRandom.sqf" call mf_compile;
 // refuelVehicle = "client\systems\playerMenu\refuel.sqf" call mf_compile;
 // repairVehicle = "client\systems\playerMenu\repair.sqf" call mf_compile;
 
+//AJ Functions
+fn_resupplytruck = "client\functions\fn_resupplytruck.sqf" call mf_compile;
+fn_fatigueReset = "client\functions\fn_fatigueReset.sqf" call mf_compile;
+fn_customUniforms = "addons\customuniforms\customUniforms.sqf" call mf_compile;
+
 // Sync client with server time
 timeSync = "client\functions\clientTimeSync.sqf" call mf_compile;
 

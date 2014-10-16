@@ -4,217 +4,138 @@ if (!hasInterface) exitWith {};
 
 waitUntil {!isNull player};
 
-player createDiarySubject ["infos", "Infos and Help"];
-player createDiarySubject ["changelog", "Changelog"];
+//player createDiarySubject ["infos", "Infos and Help"];
 player createDiarySubject ["credits", "Credits"];
+player createDiarySubject ["infos-en", "Important Infos"];
 
-player createDiaryRecord ["changelog",
+
+player createDiaryRecord ["infos-en",
 [
-"0.9h",
+"ARMAJUNKIES",
 "
-<br/> [Added] Custom revive system based on Farooq's Revive
-<br/> [Added] Territory payroll at regular intervals
-<br/> [Added] Emergency eject and free parachutes (jump key)
-<br/> [Added] Player names toggled with Windows key
-<br/> [Added] Increased missile damage against tanks and helis
-<br/> [Added] Ability to stash money in weapon crates
-<br/> [Added] Ability to sell vehicle inventory at stores
-<br/> [Added] More money shipment mission variants
-<br/> [Added] Reduced wheel damage from collisions
-<br/> [Added] Wreck salvaging
-<br/> [Added] Selling bin in stores
-<br/> [Added] Karts DLC content in stores
-<br/> [Added] Camo sniper rifles in gunstore
-<br/> [Added] Repair Offroad in vehicle store
-<br/> [Added] Team players on map as server option
-<br/> [Added] Unlimited stamina server option
-<br/> [Added] Static weapon saving server option
-<br/> [Added] More push vehicle actions
-<br/> [Added] Paradrop option for airlifted vehicles
-<br/> [Added] Preload checkbox on respawn menu
-<br/> [Added] Remote explosives store distance restriction
-<br/> [Added] Server time multipliers for day and night
-<br/> [Added] Addon-less profileNamespace server persistence
-<br/> [Added] Linux server compatibility
-<br/> [Added] Basic support for headless client
-<br/> [Changed] Independent territory capture is now group-based
-<br/> [Changed] Towns blocked if more enemies than friendlies
-<br/> [Changed] Increased ammo/fuel/repair cargo for resupply trucks
-<br/> [Changed] Increased territory capture rewards for Altis
-<br/> [Changed] Increased money mission rewards
-<br/> [Changed] Weapon loot in buildings now disabled by default
-<br/> [Changed] Mission crates loot was made more random
-<br/> [Changed] Thermal imaging is now available on UAVs
-<br/> [Changed] Increased vehicle store prices
-<br/> [Changed] Increased prices for thermal optics
-<br/> [Changed] Increased player icons up to 2000m
-<br/> [Changed] Improved antihack
-<br/> [Changed] Improved FPS
-<br/> [Fixed] Vehicle store purchase errors due to server lag
-<br/> [Fixed] Corpse created when leaving with player saving
-<br/> [Fixed] Custom vehicle damage handling not working
-<br/> [Fixed] Indie-indie spawn beacon stealing
-<br/> [Fixed] Repair kit and jerrycan distance limit
-<br/> [Fixed] Spawn beacon packing and stealing restrictions
-<br/> [Fixed] Not able to lock static weapons
-<br/> [Fixed] Unbreakable store windows
-<br/> [Fixed] Stratis airbase gunstore desk glitches
-<br/> [Fixed] Missions sometimes completing instantaneously
-<br/> [Fixed] Object ammo/fuel/repair cargo not saving
-<br/> [Fixed] Respawn menu aspect ratio on some resolutions
-<br/> [Fixed] Minor bugs with group system
-<br/> [Fixed] Minor bugs with player items
-<br/> [Fixed] Various other minor bugfixes and optimizations
+Armajunkies is a german speaking Arma community consisting mainly of players from Germany, Austria and Switzerland. You can find additional information at http://www.armajunkies.de
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9gh",
+"FEEDBACK",
 "
-<br/> 10/01/2014
-<br/> [Community update] Base building features tweaked
-<br/> [Added] Base objects - Land Piers
-<br/> [Added] Base objects - Fuel Pumps
-<br/> [Added] Mag Repack by Outlawled
-<br/> 
-<br/> 09/22/2014
-<br/> [Merge] A3Wasteland - 964 commits
-<br/>
-<br/>
-<br/> 09/14/2014
-<br/> 
-<br/> [Changed] Island and Ghost Hotel to Selakano and Kore
-<br/> [Added] Town spawn Kore, Selakano, Panagia
-<br/> [Merge] A3Wasteland - 960 commits 
-<br/>
-<br/> 09/11/2014
-<br/> [Removed] Ammo Trunks
-<br/> [Added] Resupply Trunk - Mobile resupply truck, resupply cost is pulled from Bank.
-<br/>
-<br/> 09/05/2014 
-<br/> [Removed] UAV Terminal, unable to get out of vehicle.
-<br/> [Added] New Money Shipment Missions. 
-<br/> [Added] Vehicle Store north of Kavala - Power Plant area.
-<br/> [Fixed] Money values display correctly over 1 Mil.
-<br/> [Changed] Resupply cost is 25% of cost of vehicle - pulls cost from storeconfig. 
-<br/> [Fixed] deletePlayerData to deletePlayerSave - Money lost glitch in heli.
-<br/> 
-<br/> 08/09/2014 - 1pm
-<br/> [Added] Vehicle Lock once Vehicle Saved.
-<br/> 
-<br/> 08/08/2014 - 10pm
-<br/> [Fixed] Bank Money (ATM) deletes on death.
-<br/> [Added] ALL helicopters come with flares. 
-<br/> [Changed] - Helicopter price increase.
-<br/> 
-<br/> 07/28/2014 - 11am
-<br/> [Changed] - Altis Airport Conquest Territories - $15,000 Payout
-<br/> [Changed] - Able to tow or lift any vehicle with all vehicles. 
-<br/> [Added] - Server Cleanup process - FPS boost
-<br/> 
+Feedback  is always very welcome. The easiest way to reach us is through our forum at http://www.armajunkies.de<br /><br />We also run a teamspeak server at ts3.armajunkies.de. As we are a german speaking community there may be no english speaking people online in teamspeak.
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9g",
+"SERVER PERFORMANCE",
 "
-<br/> [Added] - Vehicle stores
-<br/> [Added] - New lootspawner by Na_Palm, stuff in ALL buildings
-<br/> [Added] - New jets and truck added in A3 v1.14
-<br/> [Added] - New AAF vehicles added in A3 v1.08
-<br/> [Added] - New camos for Mk20 and MX in gunstores
-<br/> [Added] - Ability to push plane backwards
-<br/> [Added] - Ability to sell quadbike contents like crates
-<br/> [Added] - Abort delay during combat when player saving on
-<br/> [Changed] - Improved respawn menu
-<br/> [Changed] - Respawn now longer to preload destination
-<br/> [Changed] - Optimized player icons
-<br/> [Changed] - Optimized FPS fix
-<br/> [Changed] - Improved server persistence (requires iniDBI v1.4+)
-<br/> [Changed] - Improved player saving (server-specific)
-<br/> [Changed] - Improved base saving (server-specific)
-<br/> [Changed] - Reduced starting gear
-<br/> [Changed] - Modified some store prices
-<br/> [Changed] - Reduced initial fuel in cars and helis
-<br/> [Changed] - Removed Buzzard jet from too short runways
-<br/> [Changed] - Removed Kavala castle territory for use as base
-<br/> [Changed] - Increased vehicle repair time to 20 sec.
-<br/> [Changed] - Increased owner unlocking time to 10 sec.
-<br/> [Changed] - Toggling spawn beacon perms is now instant
-<br/> [Changed] - Improved Take option for player items
-<br/> [Changed] - Added option to cancel towing selection
-<br/> [Changed] - Added machine gunner to main mission NPCs
-<br/> [Changed] - Added grenadier to side mission NPCs
-<br/> [Fixed] - Error messages in various menus
-<br/> [Fixed] - Crash when toggling spawn beacon perms
-<br/> [Fixed] - Error when hacking warchests
-<br/> [Fixed] - Vehicle towing and lifting positions
-<br/> [Fixed] - Repair Vehicle option showing for brand new vehicles
-<br/> [Fixed] - Vest purchase price
-<br/> [Fixed] - Vest and helmet armor value
-<br/> [Fixed] - NPC leader now has launcher ammo
+We are running the Server with the latest CHIMERA Server build (PERF) . We are using a RAM-Disk for the ARMA Files and a dedicated High-End-Server with 64GB RAM for optimal Performance.  Therefore we hope we can provide the best performance possible to our players.<br /><br />
+ In the unlikely event ;-) that you still get bad server performance please let us know.
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9f",
+"ZEUS ENABLED",
 "
-<br/> [Added] - Money missions
-<br/> [Added] - Sell Crate Items option at stores when moving crate
-<br/> [Changed] - Reorganized loots for crates and trucks
-<br/> [Fixed] - Broken Warchest menu
-<br/> [Fixed] - Spawn beacons not working for Independent groups
-<br/> [Fixed] - Player icons position inside buildings
-<br/> [Fixed] - MRAPs and quadbikes not spawning
-<br/> [Fixed] - Broken money rewards for territories
+We enabled the Zeus Feature on this server to allow selected Players to act as a Game-Master and create more diversity for our Players . If a Zeus is online you can Ping him by pressing the Zeus Key (default: Z). Zeus is controlling the OPFOR-Faction on this server if he creates custom missions.<br /><br />
+Our Zeus Players can only use Zeus if they log in using dedicated Slots which are not saved and therefore gain no advantage if they play on non-Zeus slots.
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9e",
+"NO ADMIN/DONATOR PERKS",
 "
-<br/> [Added] - Territory system
-<br/> [Added] - Jumping option (step over while running)
-<br/> [Added] - New weapons from v1.04 update
-<br/> [Changed] - Water and food now use water bottles and baked beans
-<br/> [Fixed] - Store object purchases not operating as intended
-<br/> [Fixed] - Objects purchased from stores not saving properly
-<br/> [Fixed] - Minor server-side memory leak
+On this server there are no features which help admins or donators at the gameplay. There is also currently no need for you to donate anything. Just play and have fun.<br /><br />Wait - there is one thing you could do - if you like our server tell your friends about the 'Armajunkies'-Server so we can get the player slots filled for maximum pvp action :)
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9d",
+"ALLOWED CLIENT MODS",
 "
-<br/> [Added] - Store object purchases
-<br/> [Changed] - New UI by KoS
+Advanced arma players will be glad to know that this server is supporting several client-side mods:<br /><br />Blastcore: A visual effects package for the A3 Platform. Better explosions and light effects.<br /><br />JSRS: Sound modification. Better distance feeling and nice alternative sound effects.<br /><br />Speed of Soundv2: Another Sound modification. Better distance feeling and nice alternative sound effects. Only use one of these.<br /><br />FSF Sac Ventral: Allows to put the backpack in a ventral position to realize a parachute jump. You can find parachutes in the inventory of helicopters on this server.<br /><br />MagRepack: Lets you consolidate your non-full magazines (Shortcut for Menu: CTRL+R).<br /><br />VTS_WeaponResting: Allows you to rest your weapon on objects and improve your shooting stability (Shortcut for resting CTRL+Space).
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9c",
+"PLAYER STATUS HUD",
 "
-<br/> [Changed] - Instant money pickup and drop
-<br/> [Changed] - Increased plane and heli spawning odds
-<br/> [Fixed] - FPS fix improvements
-<br/> [Fixed] - Vehicles disappearing when untowed or airdropped
+In the below right corner there are Status Displays situated:<br /><br />Stamina, account balance, money, thirst, hunger and health.<br /><br />Stamina replenishes if you take a break or use an energy drink. Also the weight you are carring is influencing your stamina.<br />Account Balance shows your current account balance.<br />Money, well eh - buys things and is dropped if you get killed.<br />To get rid of low hunger and thirst levels you can buy food and water at the general store or loot other dead players.<br />Health: If you are below 100 health you are wounded somewhere which negativly influences your combat readiness.<br />If you are passed out another player can revive you. If this is not an option you can choose to respawn.
 "
 ]];
 
-player createDiaryRecord ["changelog",
+player createDiaryRecord ["infos-en",
 [
-"0.9b",
+"SAVE-SYSTEM/BASEBUILDING",
 "
-<br/> [Initial release] - Welcome to Altis!
+When you log out your player is safed with all his inventory and his money.<br /> <br />Base building parts which are bought in General Store are saved for 15 days if they are locked.<br /><br />Vehicles are currently not saved for optimal performance and replay value ;-)
+"
+]];
+player createDiaryRecord ["infos-en",
+[
+"SALVAGING",
+"
+You can gain money by salvaging vehicles or the equipment of dead men. Wrecks and bodies are removed if you salvage.
 "
 ]];
 
+player createDiaryRecord ["infos-en",
+[
+"ATM's",
+"
+ATM's allow you to withdraw and deposit your money. Money deposited at an ATM persists through player death.
+"
+]];
+
+player createDiaryRecord ["infos-en",
+[
+"REARM/RESUPPLY",
+"
+You can use the 'AJ Resupply Truck' to Rearm/Repair/Refuel your vehicles. This truck can be bought at the vehicle store or found at the 'supply truck' mission. Alternatively there are Resupply-Points on the Map which cost money.
+"
+]];
+
+player createDiaryRecord ["infos-en",
+[
+"STORES",
+"
+With money you can buy weapons, ammo and scopes at the gun stores marked on the map. <br />The general stores offer uniforms, vests, backpacks and special items. They First Aid Kits which can be used to heal up to 100% health or energy drinks which allow you to sprint for 5 minutes straight.<br />Vehicle Stores offer all kinds of vehicles like cars, tanks, helicopters. You can also buy objects for building your own bases there.
+"
+]];
+
+player createDiaryRecord ["infos-en",
+[
+"LOOT SPAWNS",
+"
+In spawn towns (blue circles on map) you can find vehicles containing loot.
+"
+]];
+
+player createDiaryRecord ["infos-en",
+[
+"TERRITORY CAPTURE",
+"
+You can capture the territories marked A, B, C on the map for a large amount of money. If you are able to hold the territories you get lots of money in time intervals.<br /><br /> If you are BLUFOR everyone in your faction gets money if a territory is captured.<br /><br /> For the indpendent faction the territory system is working on a group level. So only everyone in your group gets the money.
+"
+]];
+player createDiaryRecord ["infos-en",
+[
+"MISSIONS",
+"
+On the map there are several red markings which show the location's of active missions. You can complete this missions to get rewards like weapons, vehicles or money. This server is modded and prepared to allow lots of missions in parallel without impacting performance too much.
+"
+]];
+
+helpTextBriefing_EN = player createDiaryRecord ["infos-en",
+[
+"GENERAL",
+"
+Welcome Soldier,<br /><br />Wasteland is an harsh environment where you can compete with other players and AI-controlled soldiers. For players there are 2 factions. BLUFOR players (Blue) fight together with other Bluefor players and against all others (no teamkilling).  Independent Players can kill everyone - even other Independent's. Independent's can form groups though and cooperate as a team against everyone else which makes this faction a popular choice.
+"
+]];
 
 player createDiaryRecord ["credits",
 [
@@ -270,6 +191,11 @@ player createDiaryRecord ["credits",
 <br/>	* spunFIN (BIS forums)
 <br/>	* Tonic (BIS forums)
 <br/>	* wiking.at (A3W forums)
+
+<br/><font size='16' color='#BBBBBB'>Armajunkies-Extensions by:</font>
+<br/>	* Moros
+<br/>	* Wiking.at
+<br/>	* Staynex
 <br/>
 <br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
 "
@@ -280,17 +206,19 @@ player createDiaryRecord ["infos",
 [
 "Hints and Tips",
 "
-<br/><font size='18'>TOP Wasteland</font>
+<br/><font size='18'>A3Wasteland</font>
 <br/>
+<br/>* At the start of the game, spread out and find supplies before worrying about where to establish a meeting place or a base, supplies are important and very valuable.
 <br/>
-<br/>* Loot spawns in vehicles or purchased from the Gun Store.
-<br/>* Base items can be purchased from General Store, no base loot will be spawned in server. 
-<br/>* Use ATM to save your money, in the event that you are killed, it will be safe.
-<br/>* Planes are spawned, not able for purchase. Planes cannot be saved.
-<br/>* Vehicles can be saved, use action item to Save Vehicle before log off or after moving it. 
-<br/>* Base items need to be locked for save. Spawn beacon save automatically on restart.
-<br/>* Conquest territories, $15,000 pay out. 
-<br/>* AI are set to Hard.
+<br/>* When picking a base location, it is best advised to pick a place that is out of the way and not so obvious such as airports, cities, map-bound bases, etc. remember, players randomly spawn in and around towns and could even spawn inside your base should you set it up in a town.
+<br/>
+<br/>* If you spawn in an area with no vehicles or supplies in the immediate area, DO NOT just click respawn from the pause menu, chances are if you search an area of a few hundred meters, you will find something.
+<br/>
+<br/>* Always be on the lookout for nightvision. they are located in the ammo crates, and there are pairs scattered throughout vehicles. You can also purchase them from the gunstores. Nighttime without them SUCKS, and if you have them, you can conduct stealth raids on enemy bases under the cover of complete darkness.
+<br/>
+<br/>* When you set up a base, never leave your supplies unguarded, one guard will suffice, but it is recommended you have at least 2, maybe 3 guards at base at all times.
+<br/>
+<br/>* There are very aggressive AI characters that spawn with most missions and will protect the mission objectives with deadly force, be aware of them.
 "
 ]];
 

@@ -51,6 +51,12 @@ spawnActionHandle = [_this select 1, _this select 2] spawn
 	{
 		case 1: { _data call spawnInTown };
 		case 2: { _data call spawnOnBeacon };
+		//AJ+1 - Bluefor Base Spawn
+		case 3: {
+		// _data call compile preprocessFileLineNumbers "client\functions\spawnOnBluefor.sqf" 
+		_scriptHandle = _data execVM "client\functions\spawnOnBlufor.sqf";
+			waitUntil {sleep 0.1; scriptDone _scriptHandle};
+		};
 		default { _data call spawnRandom };
 	};
 

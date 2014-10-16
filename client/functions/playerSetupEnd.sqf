@@ -12,5 +12,8 @@ hungerLevel = 100;
 [objNull, _player] call mf_player_actions_refresh;
 [] execVM "client\functions\playerActions.sqf";
 
+//AJ +1 - Add Teargas feature
+_null = [player] execVM "client\functions\teargas.sqf";
+
 _player groupChat "Wasteland - Initialization Complete";
 playerSetupComplete = true;

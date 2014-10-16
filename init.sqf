@@ -39,7 +39,7 @@ if (!isDedicated) then
 {
 	[] spawn
 	{
-		9999 cutText ["Welcome to A3Wasteland, please wait for your client to initialize", "BLACK", 0.01];
+		9999 cutRsc ["loadingscreen", "BLACK"]; //custom loading screen
 
 		waitUntil {!isNull player};
 		removeAllWeapons player;
@@ -67,5 +67,27 @@ if (isServer) then
 [] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
 [] execVM "addons\JumpMF\init.sqf";
 [] execVM "addons\EtV\init.sqf";
-[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
 
+//AJ Addons
+[] execVM "addons\scripts\intro.sqf";
+//ZBE Caching 
+//[cache dist,debug,vehicle cache distance (enablesimulation)]
+//@moros - debug sinnvoll zu aktivieren wenn du dir den effekt anschauen willst
+//muss auf server und jedem client laufen
+//[2000,false,500]execvm "addons\ZBE_Caching\main.sqf";
+
+if (isServer) then
+{
+//müssen nur am server laufen
+[] execVM "addons\manualcleanup\manualCleanup.sqf";
+//init Zeus Server Scripts
+//[] execVM "addons\zeus\zeus.sqf";
+};
+
+/*
+if (str(side player) == "LOGIC") then
+{
+//init für Zeus - Admin Menü, ...
+[] execVM "addons\zeus\zeus-init.sqf";
+};
+*/

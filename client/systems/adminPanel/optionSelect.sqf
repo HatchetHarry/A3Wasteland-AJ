@@ -71,6 +71,10 @@ if (_uid call isAdmin) then
 			    {
 			    	execVM "client\systems\adminPanel\toggleGodMode.sqf";
 			    };
+				case 8: // Cleanup
+			    {
+			    	execVM "client\systems\adminPanel\manualCleanup.sqf";
+			    };
 			};
 	    };
 	    case (!isNull _displayDebug): //Debug panel

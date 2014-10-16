@@ -69,9 +69,9 @@ if (["A3W_playerSaving"] call isConfigOn) then
 {
 	call compile preprocessFileLineNumbers "persistence\client\players\setupPlayerDB.sqf";
 
-	9999 cutText ["Requesting Player Info", "BLACK", 0.01];
+	//9999 cutText ["Requesting Player Info", "BLACK", 0.01];
 	call fn_requestPlayerData;
-	9999 cutText ["Received Player Info", "BLACK", 0.01];
+	//9999 cutText ["Received Player Info", "BLACK", 0.01];
 
 	waitUntil {!isNil "playerData_loaded"};
 
@@ -125,6 +125,8 @@ A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 	[] execVM "client\functions\createGunStoreMarkers.sqf";
 	[] execVM "client\functions\createGeneralStoreMarkers.sqf";
 	[] execVM "client\functions\createVehicleStoreMarkers.sqf";
+	//AJ Basemarkers
+	[] execVM "client\functions\createBaseMarkers.sqf";
 };
 
 [] spawn playerSpawn;

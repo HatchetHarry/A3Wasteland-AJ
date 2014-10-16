@@ -34,6 +34,7 @@ _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addWeapon "arifle_TRG20_F";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
+_man2 addItemCargo["FirstAidKit",1];
 
 // Rifleman
 _man3 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
@@ -44,6 +45,7 @@ _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addWeapon "arifle_TRG20_F";
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addMagazine "30Rnd_556x45_Stanag";
+_man3 addItemCargo["FirstAidKit",1];
 
 // Grenadier
 _man4 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];

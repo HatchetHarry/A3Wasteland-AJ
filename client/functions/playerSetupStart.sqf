@@ -15,6 +15,11 @@ if (["A3W_unlimitedStamina"] call isConfigOn) then
 	_player enableFatigue false;
 };
 
+//AJ - Stamina reset function
+[] spawn fn_fatigueReset;
+//AJ- Spawn Script for Custom Player uniforms
+[] spawn fn_customUniforms;
+
 enableSentences false;
 
 removeAllWeapons _player;

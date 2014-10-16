@@ -125,7 +125,7 @@ _resupplyThread = _vehicle spawn
 	_started = true;
 	
 	//Add cost for resupply
-_playerMoney = player getVariable "bmoney";
+_playerMoney = player getVariable "cmoney";
 
 if (_playerMoney < _price) then
 	{
@@ -138,7 +138,7 @@ if (_playerMoney < _price) then
 	{
 //start resupply here - 	
 
-player setVariable["bmoney",(player getVariable "bmoney")-_price,true];
+player setVariable["cmoney",(player getVariable "cmoney")-_price,true];
 		_text = format ["You paid $%1 to resupply %2.\nNo Refunds!\nPlease stand by...",_price,_vehName];
 		[_text, 10] call mf_notify_client;		
 		[] call fn_savePlayerData;

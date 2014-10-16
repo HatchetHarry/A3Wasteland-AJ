@@ -16,7 +16,7 @@ _objs =
 	["Land_BagBunker_Small_F",[-6.35974,7.86914,-0.353401],180,1,0,{}],
 	["Land_BagBunker_Small_F",[-6.06433,-10.0005,0],0,1,0,{}],
 	["Land_BagBunker_Small_F",[5.77478,-10.3975,0.614847],0,1,0,{}],
-	["Box_East_WpsSpecial_F",[6.76294,-9.82422,0],180,1,0,{[_this,'mission_USLaunchers'] call fn_refillbox}],
+	["Box_East_WpsSpecial_F",[6.76294,-9.82422,0],180,1,0,{[_this,'mission_aj_custom4'] call fn_refillbox}],
 	["Land_HBarrierBig_F",[10.9138,4.86182,0],45,1,0,{}],
 	["Land_HBarrierBig_F",[-12.4873,4.40869,0],315,1,0,{}],
 	["Land_HBarrierBig_F",[11.8104,-6.33154,0],315,1,0,{}],

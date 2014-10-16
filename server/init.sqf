@@ -61,6 +61,9 @@ else
 }
 forEach
 [
+//AJ-Additions
+	"A3W_maxFatigue",
+//End AJ-Additions
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
 	"A3W_gunStoreIntruderWarning",

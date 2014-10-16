@@ -345,7 +345,7 @@ while {UNCONSCIOUS(_unit) && diag_tickTime < _bleedOut} do
 
 if (alive _unit && !UNCONSCIOUS(_unit)) then // Player got revived
 {
-	_unit setDamage 0;
+	_unit setDamage 0.2499;
 	_unit setVariable ["FAR_killerPrimeSuspect", nil];
 	_unit setVariable ["FAR_killerVehicle", nil];
 	_unit setVariable ["FAR_killerAmmo", nil];

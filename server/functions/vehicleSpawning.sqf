@@ -24,7 +24,8 @@ _createRandomVehicle =
 	_maxrad = _this select 2;
 	_counter = _this select 3;
 	
-	_num = random 100;
+	//AJ - Modify Mil-vehicle-Chance
+	_num = random 500;
 
 	switch (true) do
 	{

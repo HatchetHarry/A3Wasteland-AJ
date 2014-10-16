@@ -402,6 +402,25 @@ while {respawnDialogActive} do
 		if (_btnIndex >= _btnMax) exitWith {}; // no more buttons to display on
 	} forEach _locations;
 	
+			//AJ - next Block - enable BlueBase Respawn Button
+	if((side player == blufor)) then{
+		_buttonIdc = _dynamicControlsArray select _btnIndex select 0;
+		_button = _display displayCtrl _buttonIdc;
+		_text = _display displayCtrl (_dynamicControlsArray select _btnIndex select 1);
+		
+		_btnIndex = _btnIndex + 1;
+		
+		_data = "";
+		_data = "3,'2'";
+		_textStr = "BLUFOR Soldiers can always spawn here on this server";
+		_button ctrlSetText "BLUFOR Base";
+		_button buttonSetAction format ["%1 [%2,%3] execVM 'client\functions\spawnAction.sqf'", _disableAllButtons, _buttonIdc, _data];
+		_button ctrlShow true;
+		_text ctrlSetStructuredText parseText _textStr;
+		_text ctrlShow true;
+	};
+	//AJ - End
+	
 	if (_btnIndex < _btnMax) then
 	{
 		for "_i" from _btnIndex to (_btnMax - 1) do

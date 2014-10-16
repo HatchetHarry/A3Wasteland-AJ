@@ -9,7 +9,7 @@
 //Sub Colour = #FFF - White
 
 #define sideMissionTimeout (45*60)
-#define sideMissionDelayTime (5*60)
+#define sideMissionDelayTime (2*60)
 
 #define missionRadiusTrigger 99999
 #define sideMissionColor "#4BC9B0"

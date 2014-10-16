@@ -3,12 +3,15 @@
 //	@file Author: JoSchaap
 //  new one, no longer requires static routes, can use all helicopters now
 
-if (!isServer) exitwith {};
+//if (!isServer) exitwith {};
+if(!isServer) then{waitUntil{!isNull player}};
+if((!hasInterface && !isServer) || isServer) then
+{
 #include "mainMissionDefines.sqf";
 
 private ["_heli1","_heli2","_heli3","_missionMarkerName","_missionType","_picture","_vehicleName","_vehicleName2","_vehicleName3","_hint","_waypoint","_waypoints","_grouphf","_vehicles","_marker","_failed","_startTime","_numWaypoints","_ammobox","_ammobox2","_ammobox3","_createVehicle","_leader","_routepoints","_travels","_travelcount"];
 
-_missionMarkerName = "HostileHelis_Marker";
+_missionMarkerName = "HostileHelis_Marker" + str time + str (random 1000000);
 _missionType = "Hostile Helicopters";
 _hardDifficulty = (["A3W_missionsDifficulty"] call isConfigOn);
 
@@ -171,7 +174,7 @@ _hint = parseText format
 	"<t align='center' color='%5'>A formation of armed helicopters containing a <t color='%4'>%3</t>, a <t color='%4'>%6</t> and a <t color='%4'>%7</t> are patrolling the island. Destroy them and recover their cargo!</t>", 
 	_missionType, _picture, _vehicleName, mainMissionColor, subTextColor, _vehicleName2, _vehicleName3
 ];
-[_hint] call hintBroadcast;
+//[_hint] call hintBroadcast;
 
 diag_log format["WASTELAND SERVER - Main Mission Waiting to be Finished: %1", _missionType];
 
@@ -200,7 +203,7 @@ if(_failed) then
 	{deleteVehicle _x;}forEach units _grouphf;
 	deleteGroup _grouphf; 
     _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Objective Failed</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>The patrol ended, the enemy has survived and escaped with the ammo crates.</t>", _missionType, _picture, _vehicleName, failMissionColor, subTextColor];
-    [_hint] call hintBroadcast;
+    //[_hint] call hintBroadcast;
     diag_log format["WASTELAND SERVER - Main Mission Failed: %1",_missionType];
 } else {
 	// Mission completed
@@ -214,21 +217,22 @@ if(_failed) then
 	
 	// give the rewards
     _ammobox = "Box_NATO_Wps_F" createVehicle getMarkerPos _marker;
-    [_ammobox,"mission_USSpecial2"] call fn_refillbox;
+    [_ammobox,"mission_aj_custom6"] call fn_refillbox;
 	_ammobox allowDamage false;
 	
     _ammobox2 = "Box_East_Wps_F" createVehicle getMarkerPos _marker;
-    [_ammobox2,"mission_USLaunchers"] call fn_refillbox;
+    [_ammobox2,"mission_aj_custom7"] call fn_refillbox;
 	_ammobox2 allowDamage false;
 	
     _ammobox3 = "Box_NATO_WpsSpecial_F" createVehicle getMarkerPos _marker;
-    [_ammobox3,"mission_USSpecial"] call fn_refillbox;
+    [_ammobox3,"mission_aj_custom8"] call fn_refillbox;
 	_ammobox3 allowDamage false;
 	
 	deleteGroup _grouphf; 
     _hint = parseText format ["<t align='center' color='%4' shadow='2' size='1.75'>Objective Complete</t><br/><t align='center' color='%4'>------------------------------</t><br/><t align='center' color='%5' size='1.25'>%1</t><br/><t align='center'><img size='5' image='%2'/></t><br/><t align='center' color='%5'>The sky is clear again, the enemy patrol was taken out! Ammo crates have fallen near the wreck.</t>", _missionType, _picture, _vehicleName, successMissionColor, subTextColor];
-    [_hint] call hintBroadcast;
+    //[_hint] call hintBroadcast;
     diag_log format["WASTELAND SERVER - Main Mission Success: %1",_missionType];
 };
 
 deleteMarker _marker;
+};

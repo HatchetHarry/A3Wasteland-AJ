@@ -6,7 +6,7 @@
 #define SCRIPT_VERSION "1.5"
 
 // Seconds until unconscious unit bleeds out and dies. Set to 0 to disable.
-#define FAR_BleedOut ((["A3W_bleedingTime", 60] call getPublicVar) max 10)
+#define FAR_BleedOut ((["A3W_bleedingTime", 240] call getPublicVar) max 10)
 
 // Broadcast notifications when player is injured and becomes unconscious (overriden by server difficulty's DeathMessages setting)
 #define FAR_EnableDeathMessages true
