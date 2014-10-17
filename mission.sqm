@@ -1793,7 +1793,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11639.215,22.978354,12014.274};
+					position[]={11637.321,23.005476,12014.671};
 					azimut=155;
 					id=160;
 					side="LOGIC";
@@ -6078,7 +6078,7 @@ class Mission
 		};
 		class Item193
 		{
-			position[]={2110.0034,53.179375,22192.473};
+			position[]={2137.5474,60.569347,22183.148};
 			name="Mission_29";
 			type="Empty";
 			colorName="ColorOrange";
