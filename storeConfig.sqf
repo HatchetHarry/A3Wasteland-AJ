@@ -782,7 +782,7 @@ colorsArray = compileFinal str
 			["'Murica", "client\images\vehicleTextures\murica.jpg"],
 			["Confederate", "client\images\vehicleTextures\confederate.jpg"],
 			["Austria", "client\images\vehicleTextures\at.jpg"],
-			["Schland", "client\images\vehicleTextures\confederate.jpg"],
+			["Schland", "client\images\vehicleTextures\schland.jpg"],
 			["Yellow Camo", "client\images\vehicleTextures\camo_fuel.jpg"],
 			["Orange Camo", "client\images\vehicleTextures\camo_fack.jpg"],
 			["Red Camo", "client\images\vehicleTextures\camo_deser.jpg"],
