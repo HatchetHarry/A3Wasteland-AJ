@@ -299,12 +299,23 @@ else
 //Execute Server Missions.
 if (["A3W_serverMissions"] call isConfigOn) then
 {
-	diag_log "WASTELAND SERVER - Initializing Missions";
-	[] execVM "server\missions\sideMissionController.sqf";
-	sleep 5;
-	[] execVM "server\missions\mainMissionController.sqf";
-	sleep 5;
-	[] execVM "server\missions\moneyMissionController.sqf";
+//AJ - Modded for more mission spawns
+		for [{_x=0},{_x<=3},{_x=_x+1}] do
+		{
+			diag_log "WASTELAND SERVER - Initializing Missions";
+			[] execVM "server\missions\sideMissionController.sqf";
+			sleep 50;
+		};
+		for [{_x=0},{_x<=2},{_x=_x+1}] do
+		{
+			[] execVM "server\missions\mainMissionController.sqf";
+			sleep 50;
+		};
+		for [{_x=0},{_x<=2},{_x=_x+1}] do
+		{
+			[] execVM "server\missions\moneyMissionController.sqf"; 
+			sleep 300;
+		};	
 };
 
 // Start clean-up loop

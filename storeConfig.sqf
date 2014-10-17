@@ -12,8 +12,7 @@ currentOwnerName = "";
 
 pistolArray = compileFinal str
 [
-	// Handguns
-	["Starter Pistol", "hgun_Pistol_Signal_F", 5],	
+	// Handguns	
 	["P07 Pistol", "hgun_P07_F", 50],
 	["Rook-40 Pistol", "hgun_Rook40_F", 50],
 	["ACP-C2 Pistol", "hgun_ACPC2_F", 75],
@@ -782,6 +781,8 @@ colorsArray = compileFinal str
 			["AAF Green", "client\images\vehicleTextures\aaf.jpg"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
 			["'Murica", "client\images\vehicleTextures\murica.jpg"],
 			["Confederate", "client\images\vehicleTextures\confederate.jpg"],
+			["Austria", "client\images\vehicleTextures\at.jpg"],
+			["Schland", "client\images\vehicleTextures\confederate.jpg"],
 			["Yellow Camo", "client\images\vehicleTextures\camo_fuel.jpg"],
 			["Orange Camo", "client\images\vehicleTextures\camo_fack.jpg"],
 			["Red Camo", "client\images\vehicleTextures\camo_deser.jpg"],

@@ -84,26 +84,26 @@ class ATM_management {
 			h = (1 / 25);
 		};
 		
-		class PlayerList : ATM_RscCombo 
-		{
-			idc = 2703;
-			
-			x = 0.4; y = 0.58;
-			w = 0.2; h = 0.03;
-		};
+//		class PlayerList : ATM_RscCombo 
+//		{
+//			idc = 2703;
+//			
+//			x = 0.4; y = 0.58;
+//			w = 0.2; h = 0.03;
+//		};
 		
-		class TransferButton : ATM_RscButtonMenu 
-		{
-			idc = -1;
-			text = "$STR_ATM_Transfer";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "_nil=[]execVM ""addons\atm\transfer.sqf""";
+//		class TransferButton : ATM_RscButtonMenu 
+//		{
+//			idc = -1;
+//			text = "$STR_ATM_Transfer";
+//			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+//			onButtonClick = "_nil=[]execVM ""addons\atm\transfer.sqf""";
 			
-			x = 0.432;
-			y = 0.63;
-			w = (5.30 / 40);
-			h = (1 / 25);
-		};
+//			x = 0.432;
+//			y = 0.63;
+//			w = (5.30 / 40);
+//			h = (1 / 25);
+//		};
 		
 		class CloseButtonKey : ATM_RscButtonMenu {
 			idc = -1;
