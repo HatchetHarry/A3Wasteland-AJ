@@ -70,6 +70,8 @@ if (isServer) then
 
 //AJ Addons
 [] execVM "addons\scripts\intro.sqf";
+[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
+
 //ZBE Caching 
 //[cache dist,debug,vehicle cache distance (enablesimulation)]
 //@moros - debug sinnvoll zu aktivieren wenn du dir den effekt anschauen willst

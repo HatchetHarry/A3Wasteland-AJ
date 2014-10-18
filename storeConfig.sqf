@@ -339,7 +339,7 @@ headArray = compileFinal str
 	["Cap (SF)", "H_Cap_tan_specops_US", 10, "hat"],
 	["Cap (SPECOPS)", "H_Cap_brn_SPECOPS", 10, "hat"],
 	["Shemag (White)", "H_ShemagOpen_khk", 25, "hat"],
-	["Shemag (Brown)", "H_ShemagOpen_tan", 25, "hat"],
+	//["Shemag (Brown)", "H_ShemagOpen_tan", 25, "hat"],
 	["Shemag mask (Khaki)", "H_Shemag_khk", 25, "hat"],
 	["Shemag mask (Olive)", "H_Shemag_olive", 25, "hat"],
 	// ["Shemag mask (Tan)", "H_Shemag_tan", 25, "hat"],
