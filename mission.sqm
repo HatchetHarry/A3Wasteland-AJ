@@ -105,9 +105,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="AJ A3Wasteland Altis v0.9h";
-		overviewText="Wasteland survival sandbox - visit A3Wasteland.com or armajunkies.de for more details";
-		resistanceWest=0;
+		briefingName="AJ A3Wasteland Altis v0.9hi"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)		overviewText="Wasteland survival sandbox - visit A3Wasteland.com or armajunkies.de for more details"		resistanceWest=0;
 		startWeather=0.10000001;
 		startWind=0.30000001;
 		startWaves=0.40000001;
