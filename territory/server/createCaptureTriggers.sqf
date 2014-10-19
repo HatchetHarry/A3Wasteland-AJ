@@ -5,7 +5,13 @@
 # @@Modify Date: 2013-09-15 22:35:19
 # @@Function: Creates server-side capture zone triggers
 #*********************************************************/
-_currentGroup = floor (random 5);
+
+_currentGroup = floor (random 11);
+if (_currentGroup > 8) then
+{
+	_currentGroup = 0;
+};
+
 current_territorygrp_rnd = _currentGroup;
 publicvariable "current_territorygrp_rnd";
 _territoryGroup = format ["Territory_%1",_currentgroup];
