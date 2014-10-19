@@ -54,4 +54,5 @@ while { true } do
 	{ { [_x, true] call _cleanupCode } forEach allMissionObjects _x } forEach ["CraterLong", "#destructioneffects"];
 
 	diag_log format ["SERVER CLEANUP: Deleted %1 expired objects", _delQtyO];
+	{ if (count units _x == 0) then { deleteGroup _x } } forEach allGroups;
 };
