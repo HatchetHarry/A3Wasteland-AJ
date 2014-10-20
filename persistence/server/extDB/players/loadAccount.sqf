@@ -16,16 +16,14 @@ if (_len != 17) then //not a valid steam uid
 failMission "LOSER"; 
 };
 
+_bank = 0;
+_money = 0;
 _data = [];
-
 
 _result = ([format["existPlayerInfo:%1", _player_uid],2] call extDB_Database_async) select 0;
 
 if (!_result) then
 {
-	_bank = 0;
-	_money = 0;
-
 	_player_uid = getPlayerUID _player;
 	_player_name = name _player;
 
