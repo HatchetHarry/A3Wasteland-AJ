@@ -20,6 +20,8 @@ _ajUIDs =[
 		"76561198068898395", //ElSchnecko
 		"76561198049986499", //Doppelnull
 		"76561198028742047", //Fokker
+		"76561198013876877", //Skalpi
+		"76561197994865910", //SirRender
 		"76561198004909636", //Lenion.at
 		"76561198023341449" //Morli.at
 		];
@@ -38,6 +40,11 @@ if (playerSide == independent && (getPlayerUID player in _ajUIDs))  then
 			{
 			backpackContainer player setObjectTextureGlobal [0,"\A3\weapons_f\ammoboxes\bags\Data\backpack_tortila_blk_co.paa"];
 			};
+			if ((headgear player) == "H_MilCap_dgtl") then
+			{
+			sleep 1;
+			player addHeadgear "H_Watchcap_blk";
+			};			
 			//backpackContainer player setObjectTextureGlobal [0,"#(rgb,8,8,3)color(0.16,0.16,0.16,1)"]; //change backpack color to dark black - disabled because there it is really black or nearly white with arma colors
 			waitUntil {uniform player != "U_I_CombatUniform"};  //If player changes Uniform go to the top of the while loop
 		};

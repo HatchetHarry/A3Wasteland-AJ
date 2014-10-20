@@ -526,14 +526,13 @@ genItemArray = compileFinal str
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],
 	["Chemlight (Red)", "Chemlight_red", 25, "mag"],
-	["Balaclava (Black)", "H_Bandanna_khk_hs", 25, "gogg"],
-	["Balaclava (Combat G)", "H_Bandanna_khk_hs", 25, "gogg"],
+	//["Balaclava (Black)", "H_Bandanna_khk_hs", 25, "gogg"],  //not working
+	//["Balaclava (Combat G)", "H_Bandanna_khk_hs", 25, "gogg"], //not working
 	["Balaclava (Low Profile G)", "G_Balaclava_lowprofile", 25, "gogg"],
 	["Balaclava (Olive)", "G_Balaclava_oli", 25, "gogg"],
 	["Bandanna (Aviator)", "G_Bandanna_aviator", 25, "gogg"],
 	["Bandanna (Beast)", "G_Bandanna_beast", 25, "gogg"],
 	["Bandanna (Black)", "G_Bandanna_blk", 25, "gogg"],
-	["Bandanna (Khaki)", "G_Bandanna_khk", 25, "gogg"],
 	["Bandanna (Khaki)", "G_Bandanna_khk", 25, "gogg"],
 	["Bandanna (Shades)", "G_Bandanna_shades", 25, "gogg"],
 	["Bandanna (Tan)", "G_Bandanna_tan", 25, "gogg"]
