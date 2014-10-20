@@ -64,12 +64,14 @@ player call playerSetupStart;
 _baseMoney = ["A3W_startingMoney", 100] call getPublicVar;
 player setVariable ["cmoney", _baseMoney, true];
 
+
 // Player saving - Load from iniDB
 if (["A3W_playerSaving"] call isConfigOn) then
 {
 	call compile preprocessFileLineNumbers "persistence\client\players\setupPlayerDB.sqf";
 
 	//9999 cutText ["Requesting Player Info", "BLACK", 0.01];
+	waitUntil {(getPlayerUID player != "")}; //prevent PlayerUID to be null
 	call fn_requestPlayerData;
 	//9999 cutText ["Received Player Info", "BLACK", 0.01];
 
