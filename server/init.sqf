@@ -134,15 +134,9 @@ if (_playerSavingOn || _serverSavingOn) then
 				};
 		case "extDB": {  // extDB
 					_result = "extDB" callExtension "9:VERSION";
-					if (parseNumber _result < 19) exitWith
+					if (parseNumber _result < 20) exitWith
 					{
-						// Fall Back to ProfileNameSpace
-						A3W_savingMethod = compileFinal "1";
-						diag_log "[INFO] ### A3W NOT running with extDB!";
-						if (_result != "") then {diag_log format["[INFO] ### A3W Requires extDB v19 or later: extDB v%1 Detected", _result];};
-
-						A3W_savingMethodName = compileFinal "'profileNamespace'";
-						diag_log format ["[INFO] ### Saving method = %1", call A3W_savingMethodName];
+						if (_result != "") then {diag_log format["[INFO] ### A3W Requires extDB v20 or later: extDB v%1 Detected", _result];};
 					};
 
 					_persistence = "extDB";
@@ -154,12 +148,9 @@ if (_playerSavingOn || _serverSavingOn) then
 					}
 					else
 					{
-						_persistence = "default";
 						diag_log "[INFO] ### A3W extDB failed to start!";
-						A3W_savingMethod = compileFinal "1";
-						A3W_savingMethodName = compileFinal "'profileNamespace'";
-						diag_log format ["[INFO] ### Saving method = %1", call A3W_savingMethodName];
-						call compile preProcessFileLineNumbers format["persistence\server\%1\init.sqf", _persistence];
+						A3W_savingMethod = compileFinal "3";
+						A3W_savingMethodName = compileFinal "'extDB'";
 					};
 				};
 		default {  // Profile Space
