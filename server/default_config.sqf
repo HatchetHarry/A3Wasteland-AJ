@@ -17,6 +17,8 @@ A3W_antiHackMinRecoil = 0.25;       // Minimum recoil coefficient enforced by th
 A3W_spawnBeaconCooldown = 5*60;    // Number of seconds to wait between each use of an individual spawn beacon (0 = disabled)
 A3W_vehicleThermals = 0;		   // Allow vehicles to use thermals (0 = disabled)
 A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / A3W_resupplyCostPR. (4 = default, %25 percent)
+A3W_firstPersonCamOnFoot = 1;	   // Lock infantry to first person view
+A3W_firstPersonCamNotDriver = 1;   // Lock all vehicle seating positions besides driver to first person view
 
 // Store settings
 A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)

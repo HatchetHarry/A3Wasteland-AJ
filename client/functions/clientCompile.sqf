@@ -65,6 +65,7 @@ spawnRandom = "client\functions\spawnRandom.sqf" call mf_compile;
 fn_resupplytruck = "client\functions\fn_resupplytruck.sqf" call mf_compile;
 fn_fatigueReset = "client\functions\fn_fatigueReset.sqf" call mf_compile;
 fn_customUniforms = "addons\customuniforms\customUniforms.sqf" call mf_compile;
+fn_cameracheck = "addons\cameracheck\cameracheck.sqf" call mf_compile;
 
 // Sync client with server time
 timeSync = "client\functions\clientTimeSync.sqf" call mf_compile;

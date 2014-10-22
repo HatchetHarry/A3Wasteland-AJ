@@ -19,6 +19,8 @@ if (["A3W_unlimitedStamina"] call isConfigOn) then
 [] spawn fn_fatigueReset;
 //AJ- Spawn Script for Custom Player uniforms
 [] spawn fn_customUniforms;
+//AJ Custom Camera Functions
+[] spawn fn_cameracheck;
 
 enableSentences false;
 
