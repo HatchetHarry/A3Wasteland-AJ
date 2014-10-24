@@ -63,6 +63,8 @@ forEach
 [
 //AJ-Additions
 	"A3W_maxFatigue",
+	"A3W_firstPersonCamOnFoot",
+	"A3W_firstPersonCamNotDriver",
 //End AJ-Additions
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
