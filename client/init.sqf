@@ -70,9 +70,11 @@ if (["A3W_playerSaving"] call isConfigOn) then
 {
 	call compile preprocessFileLineNumbers "persistence\client\players\setupPlayerDB.sqf";
 
+	player groupChat "Requesting Player Info from database";
 	//9999 cutText ["Requesting Player Info", "BLACK", 0.01];
 	waitUntil {(getPlayerUID player != "")}; //prevent PlayerUID to be null
 	call fn_requestPlayerData;
+	player groupChat "Received Player Info";
 	//9999 cutText ["Received Player Info", "BLACK", 0.01];
 
 	waitUntil {!isNil "playerData_loaded"};

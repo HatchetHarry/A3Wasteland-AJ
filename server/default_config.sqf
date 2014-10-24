@@ -11,14 +11,14 @@ A3W_timeMultiplierDay = 1.0;       // Sets the speed of time between 5 AM and 8 
 A3W_timeMultiplierNight = 1.0;     // Sets the speed of time between 8 PM and 5 AM
 A3W_moonLight = 1;                 // Moon light during night (0 = no, 1 = yes)
 A3W_teamPlayersMap = 1;            // Show all friendly players on the map at all times, regardless of difficulty level (0 = no, 1 = yes)
-A3W_globalVoiceWarnTimer = 5;      // Number of seconds for which global voice chat must be active before triggering a warning (0 = disabled)
-A3W_globalVoiceMaxWarns = 5;       // Number of global voice warnings after which the player will be killed and crashed (0 = disabled)
+A3W_globalVoiceWarnTimer = 2;      // Number of seconds for which global voice chat must be active before triggering a warning (0 = disabled)
+A3W_globalVoiceMaxWarns = 2;       // Number of global voice warnings after which the player will be killed and crashed (0 = disabled)
 A3W_antiHackMinRecoil = 0.25;       // Minimum recoil coefficient enforced by the antihack (recommended values: default = 1.0, TMR Mod = 0.5, VTS Weapon Resting = 0.25)
 A3W_spawnBeaconCooldown = 5*60;    // Number of seconds to wait between each use of an individual spawn beacon (0 = disabled)
 A3W_vehicleThermals = 0;		   // Allow vehicles to use thermals (0 = disabled)
 A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / A3W_resupplyCostPR. (4 = default, %25 percent)
-A3W_firstPersonCamOnFoot = 1;	   // Lock infantry to first person view
-A3W_firstPersonCamNotDriver = 1;   // Lock all vehicle seating positions besides driver to first person view
+A3W_firstPersonCamOnFoot = 0;	   // Lock infantry to first person view
+A3W_firstPersonCamNotDriver = 0;   // Lock all vehicle seating positions besides driver to first person view
 
 // Store settings
 A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)

@@ -28,7 +28,7 @@ _player unlinkItem "ItemGPS";
 if (hmd _player != "") then { _player unlinkItem hmd _player };
 
 // Add NVG
-//_player linkItem "NVGoggles";
+_player linkItem "NVGoggles";
 
 _player addBackpack "B_HuntingBackpack";
 _player addMagazine "9Rnd_45ACP_Mag";

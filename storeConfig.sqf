@@ -123,9 +123,9 @@ staticGunsArray = compileFinal str
 	["Mk32 GMG 20mm High tripod (NATO)", "B_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod (CSAT)", "O_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod (AAF)", "I_GMG_01_high_F", 6000],
-	["Mk6 Mortar (NATO)", "B_Mortar_01_F", 12500]/*,
+	["Mk6 Mortar (NATO)", "B_Mortar_01_F", 12500],
 	["Mk6 Mortar (CSAT)", "O_Mortar_01_F", 12500],
-	["Mk6 Mortar (AAF)", "I_Mortar_01_F", 12500]*/
+	["Mk6 Mortar (AAF)", "I_Mortar_01_F", 12500]
 ];
 
 throwputArray = compileFinal str
