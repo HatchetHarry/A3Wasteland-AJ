@@ -28,7 +28,7 @@ _player unlinkItem "ItemGPS";
 if (hmd _player != "") then { _player unlinkItem hmd _player };
 
 // Add NVG
-_player linkItem "NVGoggles";
+//_player linkItem "NVGoggles";
 
 _player addBackpack "B_HuntingBackpack";
 _player addMagazine "9Rnd_45ACP_Mag";
@@ -38,6 +38,17 @@ _player addMagazine "9Rnd_45ACP_Mag";
 _player addMagazine "9Rnd_45ACP_Mag";
 _player addItem "FirstAidKit";
 _player selectWeapon "hgun_ACPC2_F";
+
+
+_serverID = ["A3W_extDB_ServerID", 1] call getPublicVar;
+if (_serverID == 2) then {
+_player addWeapon "SMG_02_F";
+_player addPrimaryWeaponItem "acc_flashlight";
+_player addMagazine "30Rnd_9x21_Mag";
+_player selectWeapon "SMG_02_F";
+sleep 0.1;
+player action ["GunLightOn", player];
+};
 
 if (_player == player) then
 {
