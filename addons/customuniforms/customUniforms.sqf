@@ -25,6 +25,16 @@ _ajUIDs =[
 		"76561198004909636", //Lenion.at
 		"76561198023341449" //Morli.at
 		];
+		
+_norUIDs =[
+		// Put player UIDs here
+		"76561198014462128", //RookieMacG
+		"76561198053524122", //EjaculaTor
+		"76561197973416867", //VibraTor
+		"76561198014452546" //SabotageJensen
+		];
+		
+		
 
 // Check if Player is in Indi and AJ
 if (playerSide == independent && (getPlayerUID player in _ajUIDs))  then
@@ -46,6 +56,19 @@ if (playerSide == independent && (getPlayerUID player in _ajUIDs))  then
 			player addHeadgear "H_Watchcap_blk";
 			};			
 			//backpackContainer player setObjectTextureGlobal [0,"#(rgb,8,8,3)color(0.16,0.16,0.16,1)"]; //change backpack color to dark black - disabled because there it is really black or nearly white with arma colors
+			waitUntil {uniform player != "U_I_CombatUniform"};  //If player changes Uniform go to the top of the while loop
+		};
+	};
+};
+
+if (playerSide == independent && (getPlayerUID player in _norUIDs))  then
+ { 
+	[] spawn  // Uniform
+	{
+		while {true} do
+		{
+			waitUntil {uniform player == "U_I_CombatUniform"}; 
+			player setObjectTextureGlobal [0,"addons\customuniforms\textures\nor_indep_uniform_wood_co.jpg"];
 			waitUntil {uniform player != "U_I_CombatUniform"};  //If player changes Uniform go to the top of the while loop
 		};
 	};
