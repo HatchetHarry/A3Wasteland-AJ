@@ -83,6 +83,14 @@ R3F_LOG_CFG_transporteurs =
  
 R3F_LOG_CFG_objets_transportables = 
 [
+//AJ - Added Items start
+  	["Land_Canal_Wall_10m_F", 14],
+	["Land_Canal_WallSmall_10m_F", 7],
+	["Land_Sign_WarningMilAreaSmall_F", 1],
+	["Land_Sign_WarningMilitaryArea_F", 1],
+	["Land_Sign_WarningMilitaryVehicles_F", 1],
+	["Land_Sign_WarningUnexplodedAmmo_F", 1],
+//AJ  - Added Items end
 	["StaticWeapon", 5],
 	["Box_NATO_AmmoVeh_F", 10],
 	["B_supplyCrate_F", 5],
@@ -144,6 +152,14 @@ R3F_LOG_CFG_objets_transportables =
 
 R3F_LOG_CFG_objets_deplacables =
 [
+//AJ - Added Items start
+  	"Land_Canal_Wall_10m_F",
+	"Land_Canal_WallSmall_10m_F",
+	"Land_Sign_WarningMilAreaSmall_F",
+	"Land_Sign_WarningMilitaryArea_F",
+	"Land_Sign_WarningMilitaryVehicles_F",
+	"Land_Sign_WarningUnexplodedAmmo_F",
+//AJ  - Added Items end
 	"StaticWeapon",
 	"ReammoBox_F",
 	"Kart_01_Base_F",
