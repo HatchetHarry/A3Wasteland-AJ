@@ -691,6 +691,9 @@ tanksArray = compileFinal str
 
 helicoptersArray = compileFinal str
 [
+//aj temp additions
+	["CH-67 Huron", "B_Heli_Transport_03_F", 5000, "vehicle"], //Huron CH-67 Huron
+	["Mi-290 Taru", "O_Heli_Transport_04_F", 5000, "vehicle"], //Mi-290 Taru
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 1000, "vehicle"], // MH-6
 	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 7500, "vehicle"], // Ka-60
 	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 7500, "vehicle"], // AW159
