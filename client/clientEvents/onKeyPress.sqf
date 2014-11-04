@@ -87,7 +87,7 @@ switch (true) do
 			0.5 fadeSound 1;
 			["You've taken out your ear plugs.",4] call mf_notify_client;
 		} else {
-			0.5 fadeSound 0.1;
+			0.5 fadeSound 0.3;
 			["You've inserted your ear plugs.",4] call mf_notify_client;
 		};
 	};
