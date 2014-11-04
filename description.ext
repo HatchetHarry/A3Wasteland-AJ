@@ -13,6 +13,7 @@ wreckManagerMode = 1;
 wreckRemovalMinTime = 5*60;
 wreckRemovalMaxTime = 10*60;
 enableDebugConsole = 1;
+forceRotorLibSimulation = 1;
 respawnDialog = 0; // do not enable this, otherwise the default scoreboard will overlap with the new one
 loadScreen = "Loading.jpg";
 onPauseScript = "client\clientEvents\onPause.sqf";
