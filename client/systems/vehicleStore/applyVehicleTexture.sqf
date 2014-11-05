@@ -44,6 +44,8 @@ if (!isNull _veh && _texture != "") then
 
 		case (_veh isKindOf "Heli_Transport_01_base_F"):  { [0,1] };
 		case (_veh isKindOf "Heli_Transport_02_base_F"):  { [0,1,2] };
+		case (_veh isKindOf "B_Heli_Transport_03_base_F"): { [0,1] };
+		case (_veh isKindOf "Heli_Transport_04_base_F"): { [0,1,2,3] };
 		case (_veh isKindOf "Heli_Attack_02_base_F"):     { [0,1] };
 
 		case (_veh isKindOf "Plane_Base_F"):              { [0,1] };
