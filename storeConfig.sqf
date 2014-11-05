@@ -691,27 +691,27 @@ tanksArray = compileFinal str
 
 helicoptersArray = compileFinal str
 [
-//aj temp additions
-	["CH-67 Huron", "B_Heli_Transport_03_F", 5000, "vehicle"], //Huron CH-67 Huron
-	["Mi-290 Taru", "O_Heli_Transport_04_F", 5000, "vehicle"], //Mi-290 Taru
-	["Mi-290 Taru (Ammo)", "O_Heli_Transport_04_ammo_F", 5000, "vehicle"],
-	["Mi-290 Taru (Bench)", "O_Heli_Transport_04_bench_F", 5000, "vehicle"],
-	["Mi-290 Taru (Cargo)", "O_Heli_Transport_04_box_F", 5000, "vehicle"],
-	["Mi-290 Taru (Transport)", "O_Heli_Transport_04_covered_F", 5000, "vehicle"],
-	["Mi-290 Taru (Medical)", "O_Heli_Transport_04_medevac_F", 5000, "vehicle"],
-	["Mi-290 Taru (Repair)", "O_Heli_Transport_04_repair_F", 5000, "vehicle"],
-	
-	
-	["MH-9 Hummingbird", "B_Heli_Light_01_F", 1000, "vehicle"], // MH-6
-	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 7500, "vehicle"], // Ka-60
-	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 7500, "vehicle"], // AW159
-	["CH-49 Mohawk", "I_Heli_Transport_02_F", 10000, "vehicle"], // AW101
 
+	["M-900 Civilian", "C_Heli_Light_01_civil_F", 1000, "vehicle"], // M-900 - no shooting pos
+	["PO-30 Orca (Black)", "O_Heli_Light_02_unarmed_F", 5000, "vehicle"], // Ka-60 - no shooting pos
+	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 5000, "vehicle"], // WY55 - no shooting pos
+	["CH-49 Mohawk", "I_Heli_Transport_02_F", 10000, "vehicle"], // CH-49 - shooting only through open ramp, 2 pos
+	["CH-67 Huron (Black)", "B_Heli_Transport_03_unarmed_F", 12500, "vehicle"], // Huron CH-67 Huron unarmed, 1 shooting pos
+	["MH-9 Hummingbird", "B_Heli_Light_01_F", 12500, "vehicle"], // MH-6 - shooting positions
+	["Mi-290 Taru", "O_Heli_Transport_04_F", 10000, "vehicle"], // Mi-290 Taru
+	["Mi-290 Taru (Bench)", "O_Heli_Transport_04_bench_F", 12500, "vehicle"], // Mi-290 Taru Bench
+	["Mi-290 Taru (Transport)", "O_Heli_Transport_04_covered_F", 12500, "vehicle"], // Mi-290 Taru Transport
+	["Mi-290 Taru (Cargo)", "O_Heli_Transport_04_box_F", 12500, "vehicle"], // Mi-290 Taru Cargo
+	["Mi-290 Taru (Ammo)", "O_Heli_Transport_04_ammo_F", 17500, "vehicle"], // Mi-290 Taru Ammo
+	["Mi-290 Taru (Medical)", "O_Heli_Transport_04_medevac_F",17500, "vehicle"], // Mi-290 Taru Medical
+	["Mi-290 Taru (Repair)", "O_Heli_Transport_04_repair_F", 17500, "vehicle"], // Mi-290 Taru Repair
+	["CH-67 Huron", "B_Heli_Transport_03_F", 20000, "vehicle"], // Huron CH-67 Huron - two Miniguns	
 	["UH-80 Ghost Hawk (Black)", "B_Heli_Transport_01_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["UH-80 Ghost Hawk (Green)", "B_Heli_Transport_01_camo_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns (green camo)
 	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 30000, "vehicle"], // Armed AH-6
-	["PO-30 Orca (Armed)", "O_Heli_Light_02_F", 40000, "vehicle"], // Armed Ka-60
+	["PO-30 Orca (Black & White)", "O_Heli_Light_02_v2_F", 35000, "vehicle"], // Armed Ka-60 - DAR Rockets
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 35000, "vehicle"], // Armed AW159
+	["PO-30 Orca (Armed)", "O_Heli_Light_02_F", 40000, "vehicle"], // Armed Ka-60 - DAGR Rockets
 	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 85000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman (Hex)", "O_Heli_Attack_02_F", 90000, "vehicle"], // Mi-28 with gunner
 	["Mi-48 Kajman (Black)", "O_Heli_Attack_02_black_F", 90000, "vehicle"] // Mi-28 with gunner (black camo)
