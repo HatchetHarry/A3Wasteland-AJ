@@ -26,6 +26,9 @@ doCancelAction = false;
 currentMissionsMarkers = [];
 currentRadarMarkers = [];
 
+//AJ Beacondetector
+BeaconScanInProgress = false;
+
 //Initialization Variables
 playerCompiledScripts = false;
 playerSetupComplete = false;

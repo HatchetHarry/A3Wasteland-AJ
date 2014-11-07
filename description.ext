@@ -13,7 +13,7 @@ wreckManagerMode = 1;
 wreckRemovalMinTime = 5*60;
 wreckRemovalMaxTime = 10*60;
 enableDebugConsole = 1;
-// forceRotorLibSimulation = 1; // 0 to let user choose, 1 to force on, 2 to force off
+//forceRotorLibSimulation = 1; // 0 to let user choose, 1 to force on, 2 to force off
 respawnDialog = 0; // do not enable this, otherwise the default scoreboard will overlap with the new one
 loadScreen = "Loading.jpg";
 onPauseScript = "client\clientEvents\onPause.sqf";
@@ -57,7 +57,7 @@ overviewPicture = "Loading.jpg";
 #include "addons\atm\defines.hpp"
 #include "addons\atm\bank.hpp"
 #include "addons\outlw_magRepack\MagRepack_config.hpp"
-
+#include "addons\beacondetector\sound\cfgsounds.hpp"
 
 
 class RscTitles
