@@ -6,7 +6,7 @@
 # @@Function: Creates server-side capture zone triggers
 #*********************************************************/
 
-_currentGroup = floor (random 11);
+_currentGroup = floor (random 9);
 if (_currentGroup > 8) then
 {
 	_currentGroup = 0;
