@@ -65,6 +65,12 @@ forEach
 	"A3W_maxFatigue",
 	"A3W_firstPersonCamOnFoot",
 	"A3W_firstPersonCamNotDriver",
+    "A3W_NoGlobalVoice",
+	"A3W_NoSideVoice",
+	"A3W_NoCommandVoice",
+	"A3W_NoGlobalVoiceBan",
+	"A3W_NoSideVoiceBan",
+	"A3W_NoCommandVoiceBan",	
 //End AJ-Additions
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
