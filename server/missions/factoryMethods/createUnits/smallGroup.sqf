@@ -24,6 +24,9 @@ _leader addMagazine "30Rnd_556x45_Stanag";
 _leader addMagazine "RPG32_HE_F";
 _leader addWeapon "launch_RPG32_F";
 _leader addMagazine "RPG32_HE_F";
+_leader addPrimaryWeaponItem "acc_flashlight";
+_leader linkItem "ItemRadio";
+
 
 // Rifleman
 _man2 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
@@ -35,6 +38,8 @@ _man2 addWeapon "arifle_TRG20_F";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addItemCargo["FirstAidKit",1];
+_man2 addPrimaryWeaponItem "acc_flashlight";
+_man2 linkItem "ItemRadio";
 
 // Rifleman
 _man3 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
@@ -46,6 +51,8 @@ _man3 addWeapon "arifle_TRG20_F";
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addItemCargo["FirstAidKit",1];
+_man3 addPrimaryWeaponItem "acc_flashlight";
+_man3 linkItem "ItemRadio";
 
 // Grenadier
 _man4 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];
@@ -59,6 +66,9 @@ _man4 addMagazine "30Rnd_556x45_Stanag";
 _man4 addMagazine "1Rnd_HE_Grenade_shell";
 _man4 addMagazine "1Rnd_HE_Grenade_shell";
 _man4 addMagazine "1Rnd_HE_Grenade_shell";
+_man4 addMagazines ["SmokeShell", 2]; 
+_man4 addPrimaryWeaponItem "acc_flashlight";
+_man4 linkItem "ItemRadio";
 
 _leader = leader _group;
 

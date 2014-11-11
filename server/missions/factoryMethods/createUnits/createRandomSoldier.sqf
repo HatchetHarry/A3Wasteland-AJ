@@ -26,6 +26,9 @@ _soldier = _group createUnit [_soldierTypes call BIS_fnc_selectRandom, _position
 _soldier addUniform (_uniformTypes call BIS_fnc_selectRandom);
 _soldier addVest (_vestTypes call BIS_fnc_selectRandom);
 [_soldier, _weaponTypes call BIS_fnc_selectRandom, 3] call BIS_fnc_addWeapon;
+_soldier addPrimaryWeaponItem "acc_flashlight";
+_soldier linkItem "ItemRadio";
+_soldier addMagazines ["SmokeShell", 1];
 
 _soldier spawn refillPrimaryAmmo;
 _soldier spawn addMilCap;

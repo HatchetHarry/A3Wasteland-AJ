@@ -36,7 +36,10 @@ _leader addMagazine "30Rnd_556x45_Stanag";
 _leader addMagazine "RPG32_F";
 _leader addWeapon "launch_RPG32_F";
 _leader addMagazine "RPG32_HE_F";
+_leader addMagazines ["SmokeShell", 2]; 
 _leader addItemCargo["FirstAidKit",1];
+_leader addPrimaryWeaponItem "acc_flashlight";
+_leader linkItem "ItemRadio";
 
 // Rifleman
 
@@ -50,7 +53,8 @@ _man2 addWeapon "arifle_TRG20_F";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addMagazine "30Rnd_556x45_Stanag";
 _man2 addItemCargo["FirstAidKit",1];
-
+_man2 addPrimaryWeaponItem "acc_flashlight";
+_man2 linkItem "ItemRadio";
 // Rifleman
 
 removeAllAssignedItems _man3;
@@ -63,6 +67,8 @@ _man3 addWeapon "arifle_TRG20_F";
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addMagazine "30Rnd_556x45_Stanag";
 _man3 addItemCargo["FirstAidKit",1];
+_man3 addPrimaryWeaponItem "acc_flashlight";
+_man3 linkItem "ItemRadio";
 
 // Rifleman
 
@@ -76,6 +82,8 @@ _man4 addWeapon "arifle_TRG20_F";
 _man4 addMagazine "30Rnd_556x45_Stanag";
 _man4 addMagazine "30Rnd_556x45_Stanag";
 _man4 addItemCargo["FirstAidKit",1];
+_man4 addPrimaryWeaponItem "acc_flashlight";
+_man4 linkItem "ItemRadio";
 
 // Rifleman
 
@@ -89,6 +97,8 @@ _man5 addWeapon "arifle_TRG20_F";
 _man5 addMagazine "30Rnd_556x45_Stanag";
 _man5 addMagazine "30Rnd_556x45_Stanag";
 _man5 addItemCargo["FirstAidKit",1];
+_man5 addPrimaryWeaponItem "acc_flashlight";
+_man5 linkItem "ItemRadio";
 
 // Rifleman
 
@@ -101,6 +111,8 @@ _man6 addMagazine "150Rnd_762x51_Box";
 _man6 addWeapon "LMG_Zafir_F";
 _man6 addMagazine "150Rnd_762x51_Box";
 _man6 addMagazine "150Rnd_762x51_Box";
+_man6 addPrimaryWeaponItem "acc_flashlight";
+_man6 linkItem "ItemRadio";
 
 // Grenadier
 
@@ -113,9 +125,12 @@ _man7 addMagazine "30Rnd_556x45_Stanag";
 _man7 addWeapon "arifle_TRG21_GL_F";
 _man7 addMagazine "30Rnd_556x45_Stanag";
 _man7 addMagazine "30Rnd_556x45_Stanag";
+_man7 addMagazines ["SmokeShell", 2]; 
 _man7 addMagazine "1Rnd_HE_Grenade_shell";
 _man7 addMagazine "1Rnd_HE_Grenade_shell";
 _man7 addMagazine "1Rnd_HE_Grenade_shell";
+_man7 addPrimaryWeaponItem "acc_flashlight";
+_man7 linkItem "ItemRadio";
 
 _leader = leader _group;
 
