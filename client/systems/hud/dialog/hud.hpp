@@ -97,12 +97,12 @@ class WastelandHud {
 		{
 			idc = hud_server_idc;
 			type = CT_STRUCTURED_TEXT;
-			size = 0.040;
-			x = safeZoneX + (safeZoneW * (1 - (0.90 / SafeZoneW)));
+			size = 0.03;
+			x = safeZoneX + safeZoneW - 0.55;
 			y = safeZoneY + (safeZoneH * (1 - (0.15 / SafeZoneH)));
 			w = 0.40; h = 0.15;
 			colorText[] = {1,1,1,1};
-			lineSpacing = 3;
+			lineSpacing = 1;
 			colorBackground[] = {0,0,0,0};
 			text = "";
 			shadow = 2;
