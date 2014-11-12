@@ -6342,39 +6342,40 @@ class Mission
 			position[]={3654.6221,10.49252,13082.391};
 			name="ATM1";
 			text="ATM";
-			type="mil_dot";
+			type="loc_Tree";
+			colorName="ColorCIV";
 		};
 		class Item181
 		{
 			position[]={9470.3506,118.16685,15930.939};
 			name="ATM1_1_2";
 			text="ATM";
-			type="mil_dot";
-			angle=170.3739;
+			type="loc_Tree";
+			colorName="ColorCIV";
 		};
 		class Item182
 		{
 			position[]={16764.182,12.523071,12507.15};
 			name="ATM1_1_2_1";
 			text="ATM";
-			type="mil_dot";
-			angle=154.62199;
+			type="loc_Tree";
+			colorName="ColorCIV";
 		};
 		class Item183
 		{
 			position[]={25661.855,19.905479,21327.994};
 			name="ATM1_1_2_2";
 			text="ATM";
-			type="mil_dot";
-			angle=499.10333;
+			type="loc_Tree";
+			colorName="ColorCIV";
 		};
 		class Item184
 		{
 			position[]={16647.992,17.1481,16147.845};
 			name="ATM1_1_2_3";
 			text="ATM";
-			type="mil_dot";
-			angle=48.499886;
+			type="loc_Tree";
+			colorName="ColorCIV";
 		};
 		class Item185
 		{
@@ -6588,7 +6589,7 @@ class Mission
 			position[]={23050.547,3.1900001,18983.027};
 			name="Resupply_Pad_Icon_1";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 		};
 		class Item213
@@ -6596,7 +6597,7 @@ class Mission
 			position[]={21019.395,24.309881,7233.5166};
 			name="Resupply_Pad_Icon_3";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 			angle=12.327749;
 		};
@@ -6605,7 +6606,7 @@ class Mission
 			position[]={20909.701,27.964888,6903.6963};
 			name="ChopShop_Pad_Icon_4";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item215
@@ -6613,7 +6614,7 @@ class Mission
 			position[]={15483.945,0.0054735681,15743.178};
 			name="Resupply_Pad_Icon_7";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 		};
 		class Item216
@@ -6621,7 +6622,7 @@ class Mission
 			position[]={2838.0554,-0.0014939819,12497.803};
 			name="Resupply_Pad_Icon_10";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 		};
 		class Item217
@@ -6629,7 +6630,7 @@ class Mission
 			position[]={11869.029,16.318937,9439.0293};
 			name="Resupply_Pad_Icon_3_1";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 			angle=-446.918;
 		};
@@ -6638,7 +6639,7 @@ class Mission
 			position[]={5519.7847,200.35036,19773.963};
 			name="Resupply_Pad_Icon_3_2";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 			angle=-72.878204;
 		};
@@ -6647,7 +6648,7 @@ class Mission
 			position[]={14770.31,18.045633,16183.058};
 			name="Resupply_Pad_Icon_3_3";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 			angle=375.40439;
 		};
@@ -6656,7 +6657,7 @@ class Mission
 			position[]={26998.643,21.15892,24783.936};
 			name="Resupply_Pad_Icon_3_4";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
 			angle=14.761936;
 		};
@@ -6665,16 +6666,16 @@ class Mission
 			position[]={4947.3267,16.746233,14434.576};
 			name="Resupply_Pad_Icon_3_5";
 			text="Resupply";
-			type="o_maint";
+			type="loc_Tree";
 			colorName="ColorYellow";
-			angle=-53.124439;
+			angle=-53.124401;
 		};
 		class Item222
 		{
 			position[]={15362.442,18.056513,16811.428};
 			name="ChopShop_Pad_Icon_4_1";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item223
@@ -6682,7 +6683,7 @@ class Mission
 			position[]={5174.3789,238.70483,21061.447};
 			name="ChopShop_Pad_Icon_4_1_1_1";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item224
@@ -6690,7 +6691,7 @@ class Mission
 			position[]={3708.9404,27.075712,12208.392};
 			name="ChopShop_Pad_Icon_4_1_1_1_1";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item225
@@ -6698,7 +6699,7 @@ class Mission
 			position[]={11602.902,23.553686,11993.28};
 			name="ChopShop_Pad_Icon_4_1_1_1_2_2";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item226
@@ -6706,7 +6707,7 @@ class Mission
 			position[]={22839.361,6.4185448,17174.088};
 			name="ChopShop_Pad_Icon_4_1_1_1_2_3";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item227
@@ -6714,7 +6715,7 @@ class Mission
 			position[]={25759.113,29.106672,21706.662};
 			name="ChopShop_Pad_Icon_4_1_1_1_2_4";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item228
@@ -6722,7 +6723,7 @@ class Mission
 			position[]={9521.4297,127.72007,15133.239};
 			name="ChopShop_Pad_Icon_4_1_1_1_2_5";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item229
@@ -6730,7 +6731,7 @@ class Mission
 			position[]={16914.16,11.243762,13123.479};
 			name="ChopShop_Pad_Icon_4_1_1_1_1_1";
 			text="Sell Vehicle";
-			type="o_service";
+			type="loc_Tree";
 			colorName="ColorGreen";
 		};
 		class Item230
