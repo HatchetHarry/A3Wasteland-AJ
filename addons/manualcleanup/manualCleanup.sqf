@@ -35,4 +35,6 @@ sleep 600;
     "#destructioneffects"
 ] spawn manualCleanUp;
 
+diag_log format ["LOG - EmptyDetector: %1", count allMissionObjects "EmptyDetector"];  //Keep track of amount of emptydetector objects
+
 };
