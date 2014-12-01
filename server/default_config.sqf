@@ -17,6 +17,16 @@ A3W_antiHackMinRecoil = 0.25;       // Minimum recoil coefficient enforced by th
 A3W_spawnBeaconCooldown = 5*60;    // Number of seconds to wait between each use of an individual spawn beacon (0 = disabled)
 A3W_spawnBeaconSpawnHeight = 1500; // Altitude in meters at which players will spawn when using spawn beacons (0 = ground/sea)
 
+//Voice
+A3W_NoGlobalVoice = 3;
+A3W_NoSideVoice = 3;
+A3W_NoCommandVoice = 3;
+A3W_NoGlobalVoiceBan = 0; //ban player for getting kicked x times, 0 to disable
+A3W_NoSideVoiceBan = 0; //ban player for getting kicked x times, 0 to disable
+A3W_NoCommandVoiceBan = 0; //ban player for getting kicked x times, 0 to disable
+A3W_VoiceKickTimeout = 5*60; //time in seconds where using voice a second time will get you kicked. After this has ellapsed, you will get a warning again instead of a kick
+
+
 A3W_vehicleThermals = 0;		   // Allow vehicles to use thermals (0 = disabled)
 A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / A3W_resupplyCostPR. (4 = default, %25 percent)
 A3W_firstPersonCamOnFoot = 0;	   // Lock infantry to first person view
