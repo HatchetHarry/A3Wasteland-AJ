@@ -15,6 +15,7 @@
 		
 	//player addAction ["Resupply", "_nearestTargets = nearestObjects [player, ['Car','Tank','Truck','Air','Autonomous','Support','StaticWeapon'], 100]; {_x setDamage 0; _x setFuel 1; _x setVehicleAmmo 1;} forEach _nearestTargets; hint 'resupplied';", [5,1], 50, false, false, "", "vehicle player isKindOf 'O_Truck_03_device_F';"],
 	["Resupply", "client\functions\fn_resupplytruck.sqf", [], 5, false, false, "", "!(vehicle player == player) and (cursortarget iskindof 'O_Truck_03_device_F') and (player distance cursortarget) < 15"], //vehicle player isKindOf 'O_Truck_03_device_F'
+	["Resupply", "client\functions\fn_resupplytruck.sqf", [], 5, false, false, "", "!(vehicle player == player) and (cursortarget iskindof 'O_Heli_Transport_04_ammo_F') and (player distance cursortarget) < 15"], //vehicle player isKindOf 'O_Heli_Transport_04_ammo_F'
 	["Heal self", "client\healSelf.sqf",0,2,false,false,"","((damage player)>0.01 && (damage player)<0.25499) && (('Medikit' in (items player)) or ('FirstAidKit' in (items player)))"],
 	["Track Beacons", "addons\beacondetector\beacondetector.sqf",0,-10,false,false,"","('ToolKit' in (items player)) && !BeaconScanInProgress"],
 	["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa'/> <t color='#FFFFFF'>Cancel tracking.</t>", "Beaconscanstop = true",0,-10,false,false,"","BeaconScanInProgress"],

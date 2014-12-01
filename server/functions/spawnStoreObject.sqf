@@ -191,17 +191,17 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 				{
 					case ({_object isKindOf _x} count ["Box_NATO_AmmoVeh_F", "Box_East_AmmoVeh_F", "Box_IND_AmmoVeh_F"] > 0):
 					{
-						_object setAmmoCargo 5;
+						_object setAmmoCargo 0;
 					};
 
 					case (_object isKindOf "O_Heli_Transport_04_ammo_F"):
 					{
-						_object setAmmoCargo 10;
+						_object setAmmoCargo 0;
 					};
 
 					case ({_object isKindOf _x} count ["B_Truck_01_ammo_F", "O_Truck_02_Ammo_F", "O_Truck_03_ammo_F", "I_Truck_02_ammo_F"] > 0):
 					{
-						_object setAmmoCargo 25;
+						_object setAmmoCargo 0;
 					};
 
 					case ({_object isKindOf _x} count ["C_Van_01_fuel_F", "I_G_Van_01_fuel_F", "O_Heli_Transport_04_fuel_F"] > 0):
