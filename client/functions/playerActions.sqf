@@ -28,8 +28,8 @@
 	["Holster Weapon", "player action ['SwitchWeapon', player, player, 100];", [], -11, false, false, "", "currentWeapon player != '' && vehicle player == player"],
 	["Unholster Weapon", "player action ['SwitchWeapon', player, player, 0];", [], -11, false, false, "", "currentWeapon player == '' && vehicle player == player"],			
 	
-	["Install countermeasures", "vehicle player addweapon 'CMFlareLauncher'; 
-													vehicle player addmagazine '60Rnd_CMFlareMagazine';", [5,1], -7, false, false, "", "(vehicle player isKindOf 'Air') && ( getPos vehicle player select 2) < 1"],
+	//["Install countermeasures", "vehicle player addweapon 'CMFlareLauncher'; 
+	//												vehicle player addmagazine '60Rnd_CMFlareMagazine';", [5,1], -7, false, false, "", "(vehicle player isKindOf 'Air') && ( getPos vehicle player select 2) < 1"],
 //End AJ Additions	
 	[format ["<img image='client\icons\playerMenu.paa' color='%1'/> <t color='%1'>[</t>Player Menu<t color='%1'>]</t>", "#FF8000"], "client\systems\playerMenu\init.sqf", [], -10, false], //, false, "", ""],
 	["<img image='client\icons\money.paa'/> Pickup Money", "client\actions\pickupMoney.sqf", [], 1, false, false, "", "{_x getVariable ['owner', ''] != 'mission'} count (player nearEntities ['Land_Money_F', 5]) > 0"],
