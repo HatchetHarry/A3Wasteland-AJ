@@ -130,7 +130,16 @@ storeSellingHandle = [] spawn
 		player removeWeapon _currWep;
 
 		// Remove sold inventory magazines
+<<<<<<< HEAD
 		//{ player removeMagazines _x } forEach _invMagsToRemove;
+=======
+		{
+			for "_i" from 1 to (_x select 1) do
+			{
+				player removeMagazineGlobal (_x select 0);
+			};
+		} forEach _invMagsToRemove;
+>>>>>>> 01081fb... Fixed error in sellWeapon.sqf
 
 		player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _sellValue, true];
 		hint format ["You sold your gun for $%1", [_sellValue] call fn_numbersText];
