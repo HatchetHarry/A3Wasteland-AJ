@@ -48,8 +48,16 @@ mission_ReconVeh = "server\missions\sideMissions\mission_ReconVeh.sqf" call mf_c
 
 //Factory Compiles
 _path = "server\missions\factoryMethods";
+<<<<<<< HEAD
 createCargoItem = [_path, "createCargoItem.sqf"] call mf_compile;
 createClientMarker = [_path, "createClientMarker.sqf"] call mf_compile;
+=======
+attemptCompileMissions = [_path, "attemptCompileMissions.sqf"] call mf_compile;
+checkMissionVehicleLock = [_path, "checkMissionVehicleLock.sqf"] call mf_compile;
+cleanLocationObjects = [_path, "cleanLocationObjects.sqf"] call mf_compile;
+createCustomGroup = [_path, "createUnits\customGroup.sqf"] call mf_compile;
+createCustomGroup2 = [_path, "createUnits\customGroup2.sqf"] call mf_compile;
+>>>>>>> 0b0a334... Added @JoSchaap's hostile town mission
 createLargeDivers = [_path, "createUnits\largeDivers.sqf"] call mf_compile;
 createLargeGroup = [_path, "createUnits\largeGroup.sqf"] call mf_compile;
 createMidGroup = [_path, "createUnits\midGroup.sqf"] call mf_compile;
@@ -60,10 +68,21 @@ createRandomSoldier = [_path, "createUnits\createRandomSoldier.sqf"] call mf_com
 createRandomSoldierC = [_path, "createUnits\createRandomSoldierC.sqf"] call mf_compile;
 createRandomAquaticSoldier = [_path, "createUnits\createRandomAquaticSoldier.sqf"] call mf_compile;
 createSmallDivers = [_path, "createUnits\smallDivers.sqf"] call mf_compile;
+<<<<<<< HEAD
 createSmallGroup = [_path, "createUnits\smallGroup.sqf"] call mf_compile;
 createSupplyDrop = [_path, "createSupplyDrop.sqf"] call mf_compile;
 createWaitCondition = [_path, "createWaitCondition.sqf"] call mf_compile;
 deleteClientMarker = [_path, "deleteClientMarker.sqf"] call mf_compile;
+=======
+generateMissionWeights = [_path, "generateMissionWeights.sqf"] call mf_compile;
+mission_VehicleCapture = "server\missions\mainMissions\mission_VehicleCapture.sqf" call mf_compile;
+missionHint = [_path, "missionHint.sqf"] call mf_compile;
+moveIntoBuildings = [_path, "moveIntoBuildings.sqf"] call mf_compile;
+removeDisabledMissions = [_path, "removeDisabledMissions.sqf"] call mf_compile;
+setLocationObjects = [_path, "setLocationObjects.sqf"] call mf_compile;
+setLocationState = [_path, "setLocationState.sqf"] call mf_compile;
+setMissionState = [_path, "setMissionState.sqf"] call mf_compile;
+>>>>>>> 0b0a334... Added @JoSchaap's hostile town mission
 
 //Function Compiles
 _path = "server\functions";
