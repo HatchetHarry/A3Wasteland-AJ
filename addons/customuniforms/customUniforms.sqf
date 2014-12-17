@@ -33,6 +33,8 @@ _norUIDs =[
 		"76561197973416867", //VibraTor
 		"76561197990355187", //Vingebil
 		"76561198014452546" //SabotageJensen
+		"76561198018337718" //Awinnes
+		"76561197973304259" //Frank the Tank
 		];
 		
 _odsUIDs =[
