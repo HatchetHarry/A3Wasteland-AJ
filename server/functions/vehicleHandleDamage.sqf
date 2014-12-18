@@ -81,6 +81,8 @@ if (_selection != "?") then
 			};
 		};
 	};
+
+	[_vehicle, _selection, _damage, _source, _ammo] call vehicleHitTracking;
 };
 
 _damage

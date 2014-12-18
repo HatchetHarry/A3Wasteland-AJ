@@ -7,8 +7,28 @@ if (!isServer) exitWith {};
 
 if (isNil "ahSetupDone") then
 {
+<<<<<<< HEAD
 	private ["_packetKey", "_assignPacketKey", "_packetKeyArray", "_checksum", "_assignChecksum", "_checksumArray", "_networkCompile"];
 	
+=======
+	private ["_compileKey", "_assignCompileKey", "_packetKey", "_assignPacketKey", "_packetKeyArray", "_checksum", "_assignChecksum", "_checksumArray"];
+
+	_compileKey = call A3W_fnc_generateKey;
+
+	_assignCompileKey = "";
+	for "_x" from 0 to (floor random 50) do { _assignCompileKey = _assignCompileKey + " " };
+	_assignCompileKey = _assignCompileKey + 'private "_compileKey";';
+	for "_x" from 0 to (floor random 50) do { _assignCompileKey = _assignCompileKey + " " };
+	for "_x" from 0 to (floor random 5) do { _assignCompileKey = _assignCompileKey + str floor random 10 + '=" private ""_compileKey""; call compile toString [' + str floor random 100 + '];";' };
+	_assignCompileKey = _assignCompileKey + "call compile toString ";
+	_compileKeyArray = "_compileKey = ";
+	{
+		if (_forEachIndex > 0) then { _compileKeyArray = _compileKeyArray + "+" };
+		_compileKeyArray = _compileKeyArray + format ['"%1"', toString [_x]];
+	} forEach toArray _compileKey;
+	_assignCompileKey = _assignCompileKey + (str toArray _compileKeyArray) + "; ";
+
+>>>>>>> eda9f0a... Minor improvements to AH
 	_packetKey = call A3W_fnc_generateKey;
 	
 	_assignPacketKey = "";
@@ -38,6 +58,7 @@ if (isNil "ahSetupDone") then
 		_checksumArray = _checksumArray + format ['"%1"', toString [_x]];
 	} forEach toArray _checksum;
 	_assignChecksum = _assignChecksum + (str toArray _checksumArray) + "; ";
+<<<<<<< HEAD
 	
 	_networkFuncs = "['" + _assignChecksum + "','" + _assignPacketKey + "'] execVM 'server\antihack\compileFuncs.sqf'";
 	A3W_network_compileFuncs = compileFinal _networkFuncs;
@@ -49,5 +70,11 @@ if (isNil "ahSetupDone") then
 	AntiAntiAntiAntiHack = compileFinal "false";
 	
 	ahSetupDone = compileFinal "true";
+=======
+
+	[_assignCompileKey, _assignChecksum, _assignPacketKey] call compile preprocessFileLineNumbers "server\antihack\createUnit.sqf";
+	waitUntil {!isNil {missionNamespace getVariable _compileKey}};
+
+>>>>>>> eda9f0a... Minor improvements to AH
 	diag_log "ANTI-HACK: Started.";
 };

@@ -19,6 +19,13 @@ addMissionEventHandler ["HandleDisconnect",
 		_unit = _this select 0;
 		if (alive _unit) then { deleteVehicle _unit };
 	};
+
+	if (!isNil "fn_onPlayerDisconnected") then
+	{
+		[_id, _uid, _name] call fn_onPlayerDisconnected;
+	};
+
+	false
 }];
 
 //Execute Server Side Scripts.
@@ -229,6 +236,16 @@ if (!isNil "A3W_startHour" || !isNil "A3W_moonLight") then
 	setDate [2035, 6, _monthDay, _startHour, 0];
 };
 
+if (_playerSavingOn && !((call A3W_savingMethod) in ["profile","none"])) then
+{
+	["A3W_join", "onPlayerConnected", { [_id, _uid, _name] spawn fn_onPlayerConnected }] call BIS_fnc_addStackedEventHandler;
+
+	[] spawn
+	{
+		{ [getPlayerUID _x, name _x] call fn_kickPlayerIfFlagged } forEach (call allPlayers);
+	};
+};
+
 if ((isNil "A3W_buildingLoot" && {["A3W_buildingLootWeapons"] call isConfigOn || {["A3W_buildingLootSupplies"] call isConfigOn}}) || {["A3W_buildingLoot"] call isConfigOn}) then
 {
 	diag_log "[INFO] A3W loot spawning is ENABLED";
@@ -271,8 +288,6 @@ if (["A3W_serverSpawning"] call isConfigOn) then
 		call compile preprocessFileLineNumbers "server\functions\boxSpawning.sqf";
 	};
 };
-
-["A3W_quit", "onPlayerDisconnected", { [_id, _uid, _name] spawn fn_onPlayerDisconnected }] call BIS_fnc_addStackedEventHandler;
 
 if (count (["config_territory_markers", []] call getPublicVar) > 0) then
 {
