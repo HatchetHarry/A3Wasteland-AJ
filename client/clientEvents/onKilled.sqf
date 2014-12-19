@@ -29,14 +29,14 @@ if (_player == player) then
 	closeDialog 2009; // Close Genstore
 	closeDialog 5285; // Close Vehstore
 	uiNamespace setVariable ["BIS_fnc_guiMessage_status", false]; // close message boxes
-
-	// Load scoreboard in render scope
-	["A3W_scoreboard", "onEachFrame",
-	{
-		call loadScoreboard;
-		["A3W_scoreboard", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-	}] call BIS_fnc_addStackedEventHandler;
-
+	if(!isServer) then {
+		// Load scoreboard in render scope
+		["A3W_scoreboard", "onEachFrame",
+		{
+			call loadScoreboard;
+			["A3W_scoreboard", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+		}] call BIS_fnc_addStackedEventHandler;
+	};
 	playerData_gear = ""; // Reset gear data
 	//combatTimestamp = -1; // Reset abort timer
 };

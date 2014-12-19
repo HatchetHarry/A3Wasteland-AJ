@@ -11,16 +11,6 @@ externalConfigFolder = "\A3Wasteland_settings";
 
 vChecksum = compileFinal str call A3W_fnc_generateKey;
 
-// Corpse deletion on disconnect if player alive and player saving on
-addMissionEventHandler ["HandleDisconnect",
-{
-	if (isNil "isConfigOn" || {["A3W_playerSaving"] call isConfigOn}) then
-	{
-		_unit = _this select 0;
-		if (alive _unit) then { deleteVehicle _unit };
-	};
-}];
-
 //Execute Server Side Scripts.
 call compile preprocessFileLineNumbers "server\antihack\setup.sqf";
 [] execVM "server\admins.sqf";
@@ -70,7 +60,7 @@ forEach
 	"A3W_NoCommandVoice",
 	"A3W_NoGlobalVoiceBan",
 	"A3W_NoSideVoiceBan",
-	"A3W_NoCommandVoiceBan",	
+	"A3W_NoCommandVoiceBan",
 //End AJ-Additions
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
@@ -273,6 +263,16 @@ if (["A3W_serverSpawning"] call isConfigOn) then
 };
 
 ["A3W_quit", "onPlayerDisconnected", { [_id, _uid, _name] spawn fn_onPlayerDisconnected }] call BIS_fnc_addStackedEventHandler;
+// Corpse deletion on disconnect if player alive and player saving on
+
+// TODO: Add DEBUGS - Ask Agentrev if compile is following the a3w code creation rules or not. Should be in Server functions, but would double the work
+onKilled = "client\clientEvents\onKilled.sqf" call mf_compile;
+["\client\inventory\"] execVM "\client\inventory\init.sqf";
+fn_removeAllManagedActions = "client\functions\fn_removeAllManagedActions.sqf" call mf_compile;
+mf_inventory_all = {mf_inventory} call mf_compile;
+//TODO: END COMPILE
+
+_handleDisconnectHandler = addMissionEventHandler ["HandleDisconnect",{ [_this select 0, _this select 1, _this select 2, _this select 3] spawn handleDisconnect}];
 
 if (count (["config_territory_markers", []] call getPublicVar) > 0) then
 {
@@ -313,10 +313,11 @@ if (["A3W_serverMissions"] call isConfigOn) then
 		};
 		for [{_x=0},{_x<=2},{_x=_x+1}] do
 		{
-			[] execVM "server\missions\moneyMissionController.sqf"; 
+			[] execVM "server\missions\moneyMissionController.sqf";
 			sleep 300;
-		};	
+		};
 };
+
 
 // Start clean-up loop
 [] execVM "server\WastelandServClean.sqf";

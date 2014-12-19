@@ -97,6 +97,9 @@ vehicleRepair = [_path, "vehicleRepair.sqf"] call mf_compile;
 vehicleRespawnCheck = [_path, "vehicle.sqf"] call mf_compile;
 vehicleSetup = [_path, "vehicleSetup.sqf"] call mf_compile;
 
+//AJ Change - Handles Player despawn and body deletion
+handleDisconnect = [_path, "handleDisconnect.sqf"] call mf_compile;
+
 //Player Management
 server_playerDied = [_path, "serverPlayerDied.sqf"] call mf_compile;
 
