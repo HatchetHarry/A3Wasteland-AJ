@@ -3,12 +3,25 @@
 //	@file Author: AgentRev
 //	@file Created: 04/01/2014 02:51
 
+<<<<<<< HEAD
 private ["_assignChecksum", "_assignPacketKey"];
+=======
+private ["_assignCompileKey", "_assignChecksum", "_assignPacketKey", "_compileKey", "_checksum", "_packetKey"];
+>>>>>>> eda9f0a... Minor improvements to AH
 
-_assignChecksum = [_this, 0, "", [""]] call BIS_fnc_param;
-_assignPacketKey = [_this, 1, "", [""]] call BIS_fnc_param;
+_assignCompileKey = [_this, 0, "", [""]] call BIS_fnc_param;
+_assignChecksum = [_this, 1, "", [""]] call BIS_fnc_param;
+_assignPacketKey = [_this, 2, "", [""]] call BIS_fnc_param;
 
+<<<<<<< HEAD
 if (call compile (_assignChecksum + "isNil {missionNamespace getVariable _flagChecksum}")) then
+=======
+_compileKey = call compile (_assignCompileKey + "_compileKey");
+_checksum = call compile (_assignChecksum + "_flagChecksum");
+_packetKey = call compile (_assignPacketKey + "_mpPacketKey");
+
+if (isNil {missionNamespace getVariable _compileKey}) then
+>>>>>>> eda9f0a... Minor improvements to AH
 {
 	{
 		_func = _x select 0;
@@ -52,8 +65,12 @@ if (call compile (_assignChecksum + "isNil {missionNamespace getVariable _flagCh
 		[] spawn compile (_assignChecksum + (preprocessFileLineNumbers "server\antihack\payload.sqf"));
 	};
 
+<<<<<<< HEAD
 	//call compile (_assignChecksum + "call compile format ['%1 = compileFinal str true', _flagChecksum]");
 	call compile (_assignChecksum + "missionNamespace setVariable [_flagChecksum, compileFinal 'true']");
+=======
+	missionNamespace setVariable [_compileKey, compileFinal "true"];
+>>>>>>> eda9f0a... Minor improvements to AH
 };
 
 call compile (_assignPacketKey + "_mpPacketKey addPublicVariableEventHandler A3W_fnc_MPexec");
